@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import ThemeToggle from "./themeToggle";
+import { useTranslations } from "next-intl";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+    const t = useTranslations("Header")
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,19 +15,31 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="w-full sticky top-0 z-50 bg-white dark:bg-gray-900 shadow-sm">
+    <header className="w-full sticky z-50">
       {/* Navbar fijo (arriba) */}
       <div className="py-4 px-8 sm:px-20 flex justify-between items-center border-b">
         <span className="font-semibold">My Portfolio</span>
         <nav>
-          <a href="#about" className="mx-2 hover:underline">
-            About
+          <a href="#home" className="underline-color decoration-4 mx-2 hover:underline">
+            {t("home")}
           </a>
-          <a href="#projects" className="mx-2 hover:underline">
-            Projects
+          <a href="#projects" className="underline-color decoration-4 mx-2 hover:underline">
+            {t("courses")}
           </a>
-          <a href="#contact" className="mx-2 hover:underline">
-            Contact
+          <a href="#contact" className="underline-color decoration-4 mx-2 hover:underline">
+            {t("info")}
+          </a>
+          <a href="#contact" className="underline-color decoration-4 mx-2 hover:underline">
+            {t("recomendation")}
+          </a>
+          <a href="#contact" className="underline-color decoration-4 mx-2 hover:underline">
+            {t("proyect")}
+          </a>
+          <a href="#contact" className="underline-color decoration-4 mx-2 hover:underline">
+            {t("hobbies")}
+          </a>
+          <a href="#contact" className="underline-color decoration-4 mx-2 hover:underline">
+            {t("blog")}
           </a>
         </nav>
         <ThemeToggle />

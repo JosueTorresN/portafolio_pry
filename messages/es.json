@@ -1,6 +1,27 @@
 {
+    "Head": {
+        "title": "Mi Portafolio",
+        "description": "Este es mi portafolio personal donde comparto mis proyectos y experiencias."
+    },
+    "Header": {
+        "home": "Inicio",
+        "courses": "Cursos",
+        "info": "Información",
+        "recomendation": "Recomendaciones",
+        "proyect": "Proyectos",
+        "hobbies": "Pasatiempos",
+        "blog": "Blog"
+    },
     "Homepage": {
         "title": "Página de inicio",
         "welcomeMessage": "Bienvenido a nuestra aplicación"
+    },
+    "Courses": {
+        "Course1": {
+            "Code": "IC1234",
+            "Name": "Introducción a la Programación",
+            "Semester": "Otoño 2024",
+            "Description": "Este curso cubre los conceptos básicos de la programación utilizando Python. Los estudiantes aprenderán sobre variables, estructuras de control, funciones y manejo de errores."
+        }
     }
 }

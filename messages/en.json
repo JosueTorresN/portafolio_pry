@@ -1,6 +1,27 @@
 {
+    "Head": {
+        "title": "My Portfolio",
+        "description": "This is my personal portfolio where I share my projects and experiences."
+    },
+    "Header": {
+        "home": "Home",
+        "courses": "Courses",
+        "info": "Info",
+        "recomendation": "Recomendations",
+        "proyect": "Proyects",
+        "hobbies": "Hobbies",
+        "blog": "Blog"
+    },
     "Homepage": {
         "title": "Homepage",
         "welcomeMessage": "Welcome to our application"
+    },
+    "Courses": {
+        "Course1": {
+            "Code": "IC8057",
+            "Name": "Introducción al Desarrollo de Páginas Web",
+            "Semester": "Semester 2, 2025",
+            "Description": "This course covers the basics of programming using Python. Students will learn about variables, control structures, functions, and error handling."
+        }
     }
 }

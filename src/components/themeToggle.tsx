@@ -16,17 +16,6 @@ export default function ThemeToggle() {
       document.documentElement.classList.add("light");
     }
   }, []);
-  // useEffect(() => {
-  //   const storedTheme = localStorage.getItem("theme");
-  //   if (storedTheme) {
-  //     setTheme(storedTheme);
-  //     document.documentElement.classList.toggle("dark", storedTheme === "dark");
-  //   } else {
-  //     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  //     setTheme(prefersDark ? "dark" : "light");
-  //     document.documentElement.classList.toggle("dark", prefersDark);
-  //   }
-  // }, []);
 
   // Cambiar tema
   const toggleTheme = () => {
