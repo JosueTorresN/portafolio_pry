@@ -1,3 +1,4 @@
+'use client';
 import { useEffect, useState } from "react";
 import ThemeToggle from "./themeToggle";
 import { useTranslations } from "next-intl";
@@ -61,10 +62,10 @@ export default function Header() {
             </p>
           </div>
           <div className="mt-4 sm:mt-0 flex space-x-4">
-            <a href="mailto:correo@ejemplo.com" className="hover:underline">
-              correo@ejemplo.com
+            <a href="mailto:jtn1999@outlook.com" className="hover:underline underline-color decoration-4">
+              jtn1999@outlook.com
             </a>
-            <a href="https://linkedin.com" className="hover:underline">
+            <a href="https://linkedin.com" className="hover:underline underline-color decoration-4">
               LinkedIn
             </a>
           </div>

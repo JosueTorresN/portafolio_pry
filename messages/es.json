@@ -17,11 +17,64 @@
         "welcomeMessage": "Bienvenido a nuestra aplicación"
     },
     "Courses": {
-        "Course1": {
-            "Code": "IC1234",
-            "Name": "Introducción a la Programación",
-            "Semester": "Otoño 2024",
-            "Description": "Este curso cubre los conceptos básicos de la programación utilizando Python. Los estudiantes aprenderán sobre variables, estructuras de control, funciones y manejo de errores."
+        "cont": "2",
+        "1": {
+                "code": "IC1234",
+                "name": "Introducción a la Programación",
+                "semester": "Otoño 2024",
+                "description": "Este curso cubre los conceptos básicos de la programación utilizando Python. Los estudiantes aprenderán sobre variables, estructuras de control, funciones y manejo de errores.",
+                "works": {
+                    "cont": "2",
+                    "1": {
+                        "title": "Sitio Web de Portafolio Personal",
+                        "tipe": "Laboratorio",
+                        "description": "Un sitio web de portafolio personal para mostrar mis proyectos y habilidades, construido con HTML, CSS y JavaScript.",
+                        "image": "/images/portfolio.png",
+                        "date": "Fecha: 2024-10-15",
+                        "tech": "HTML*CSS*JavaScript",
+                        "repository": "www.github.com/username/portfolio",
+                        "link": "www.username.com"   
+                    },
+                    "2": {
+                        "title": "Plantilla de Blog Responsiva",
+                        "tipe": "Proyecto",
+                        "description": "Una plantilla de blog responsiva diseñada para dispositivos móviles y de escritorio, utilizando principios modernos de diseño web.",
+                        "image": "/images/blog_template.png",
+                        "date": "Fecha: 2024-11-20",
+                        "tech": "HTML*CSS*JavaScript",
+                        "repository": "www.github.com/username/blog-template",
+                        "link": "www.username.com/blog"   
+                    }
+                }
+            },
+         "2": {
+                "code": "IC8057",
+                "name": "Introducción al Desarrollo de Páginas Web 2",
+                "semester": "Semestre 2, 2025",
+                "description": "Este curso introduce a los estudiantes en el desarrollo de páginas web utilizando HTML, CSS y JavaScript. Se enfoca en la creación de sitios web responsivos y accesibles, pero 2.",
+                "works": {
+                    "cont": "2",
+                    "1": {
+                        "title": "Sitio Web de Portafolio Personal",
+                        "tipe": "Laboratorio",
+                        "description": "Un sitio web de portafolio personal para mostrar mis proyectos y habilidades, construido con HTML, CSS y JavaScript.",
+                        "image": "/images/portfolio.png",
+                        "date": "Fecha: 2024-10-15",
+                        "tech": "HTML*CSS*JavaScript",
+                        "repository": "www.github.com/username/portfolio",
+                        "link": "www.username.com"   
+                    },
+                    "2": {
+                        "title": "Plantilla de Blog Responsiva",
+                        "tipe": "Proyecto",
+                        "description": "Una plantilla de blog responsiva diseñada para dispositivos móviles y de escritorio, utilizando principios modernos de diseño web.",
+                        "image": "/images/blog_template.png",
+                        "date": "Fecha: 2024-11-20",
+                        "tech": "HTML*CSS*JavaScript*Bootstrap",
+                        "repository": "www.github.com/username/blog-template",
+                        "link": "www.username.com/blog"   
+                    }
+                }
         }
     }
 }

@@ -7,7 +7,8 @@
   --color-text-offset: #757D84;
   --color-border: #e8e0d9;
   --color-primary: #99C221;
-  --color-primary-offset: #6E910A;
+  --color-primary-offset: #90b42b;
+  --color-prymary-hover: #a4ac0c;
   --color-secondary: #E55812;
 }
 
@@ -18,28 +19,10 @@
   --color-text-offset: #94a1b2;
   --color-border: #383a61;
   --color-primary: #7f5af0;
-  --color-primary-offset: #e068fd;
+  --color-primary-offset: #dc59fd;
+  --color-prymary-hover: #d426ff;
   --color-secondary: #2cb67d;
 }
-
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
 
 body {
   background: var(--color-bg);
@@ -73,4 +56,16 @@ header {
 
 .primary {
   background-color: var(--color-primary);
+}
+
+.primary-offset {
+  background-color: var(--color-primary-offset);
+}
+
+.primary-hover:hover {
+  background-color: var(--color-prymary-hover);
+}
+
+.secondary {
+  background-color: var(--color-secondary);
 }

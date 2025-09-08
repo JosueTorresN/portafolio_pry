@@ -17,11 +17,64 @@
         "welcomeMessage": "Welcome to our application"
     },
     "Courses": {
-        "Course1": {
-            "Code": "IC8057",
-            "Name": "Introducción al Desarrollo de Páginas Web",
-            "Semester": "Semester 2, 2025",
-            "Description": "This course covers the basics of programming using Python. Students will learn about variables, control structures, functions, and error handling."
+        "cont": "2",
+        "1": {
+            "code": "IC8057",
+            "name": "Introduction to Web Development 2",
+            "semester": "Semester 2, 2025",
+            "description": "This course covers the basics of programming using Python. Students will learn about variables, control structures, functions, and error handling.",
+            "works": {
+                "cont": "2",
+                "1": {
+                    "title": "Personal Portfolio Website",
+                    "tipe": "Lab",
+                    "description": "A personal portfolio website to showcase my projects and skills, built using HTML, CSS, and JavaScript.",
+                    "image": "/images/portfolio.png",
+                    "date": "Date: 2024-10-15",
+                    "tech": "HTML*CSS*JavaScript",
+                    "repository": "www.github.com/username/portfolio",
+                    "link": "www.username.com"   
+                },
+                "2": {
+                    "title": "Responsive Blog Template",
+                    "tipe": "Project",
+                    "description": "A responsive blog template designed for mobile and desktop, utilizing modern web design principles.",
+                    "image": "/images/blog_template.png",
+                    "date": "Date: 2024-11-20",
+                    "tech": "HTML*CSS*JavaScript*Bootstrap",
+                    "repository": "www.github.com/username/blog-template",
+                    "link": "www.username.com/blog"   
+                }
+            }
+        },
+        "2": {
+            "code": "IC1234",
+            "name": "Introduction to Programming",
+            "semester": "Fall 2024",
+            "description": "This course introduces students to web development using HTML, CSS, and JavaScript. It focuses on creating responsive and accessible websites.",
+            "works": {
+                "cont": "2",
+                "1": {
+                    "title": "E-commerce Website",
+                    "tipe": "Lab",
+                    "description": "An e-commerce website with product listings, a shopping cart, and checkout functionality, built using HTML, CSS, JavaScript, and React.",
+                    "image": "/images/ecommerce.png",
+                    "date": "Date: 2024-10-15",
+                    "tech": "HTML*CSS*JavaScript*React",
+                    "repository": "www.github.com/username/ecommerce",
+                    "link": "www.username.com/shop"   
+                },
+                "2": {
+                    "title": "Task Management App",
+                    "tipe": "Project",
+                    "description": "A task management application to help users organize their tasks and projects, featuring user authentication and data persistence.",
+                    "image": "/images/task_manager.png",
+                    "date": "Date: 2024-11-20",
+                    "tech": "HTML*CSS*JavaScript*Node.js*MongoDB",
+                    "repository": "www.github.com/username/task-manager",
+                    "link": "www.username.com/tasks"   
+                }
+            }
         }
     }
 }
