@@ -2,10 +2,11 @@
 import { useEffect, useState } from "react";
 import ThemeToggle from "./themeToggle";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing"
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
-    const t = useTranslations("Header")
+  const t = useTranslations("Header")
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,12 +22,12 @@ export default function Header() {
       <div className="py-4 px-8 sm:px-20 flex justify-between items-center border-b">
         <span className="font-semibold">My Portfolio</span>
         <nav>
-          <a href="#home" className="underline-color decoration-4 mx-2 hover:underline">
+          <Link href="/" className="underline-color decoration-4 mx-2 hover:underline">
             {t("home")}
-          </a>
-          <a href="#projects" className="underline-color decoration-4 mx-2 hover:underline">
+          </Link>
+          <Link href="/#projects" className="underline-color decoration-4 mx-2 hover:underline">
             {t("courses")}
-          </a>
+          </Link>
           <a href="#contact" className="underline-color decoration-4 mx-2 hover:underline">
             {t("info")}
           </a>
@@ -39,9 +40,9 @@ export default function Header() {
           <a href="#contact" className="underline-color decoration-4 mx-2 hover:underline">
             {t("hobbies")}
           </a>
-          <a href="#contact" className="underline-color decoration-4 mx-2 hover:underline">
+          <Link href="/block" className="underline-color decoration-4 mx-2 hover:underline">
             {t("blog")}
-          </a>
+          </Link>
         </nav>
         <ThemeToggle />
       </div>
@@ -55,10 +56,10 @@ export default function Header() {
         <div className="py-6 px-8 sm:px-20 flex flex-col sm:flex-row justify-between items-center">
           <div>
             <h1 className="text-xl font-bold text-800 dark:text-200">
-              Juan Gómez
+              Josué Torres Narvaez
             </h1>
             <p className="text-sm text-600 dark:text-400">
-              Ingeniero en IA | Ciberseguridad | Desarrollador Web
+              {t("knowlaged1")} | {t("knowlaged2")} | {t("knowlaged3")}
             </p>
           </div>
           <div className="mt-4 sm:mt-0 flex space-x-4">

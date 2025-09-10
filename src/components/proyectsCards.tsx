@@ -48,7 +48,7 @@ const CardsContainer: React.FC = () => {
   const courses = getCourses();
 
   return (
-    <section className="flex flex-col items-center justify-center p-8 min-h-screen">
+    <section className="flex flex-col items-center justify-center p-8 min-h-screen" id="projects">
       <div className="surface-offset border-color w-1/2 h-screen overflow-y-scroll scrollbar-hide p-4 rounded-lg shadow-lg">
         {courses.map((course, index) => (
           <ProyectCard

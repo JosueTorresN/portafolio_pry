@@ -5,14 +5,16 @@ import { useReactToPrint } from "react-to-print";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Github, Linkedin } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function ProfileSection() {
+  const t = useTranslations("CV");
   const sectionRef = useRef(null);
-const handlePrint = useReactToPrint({
-  // ✅ Tipos correctos
-  contentRef: sectionRef,
-  documentTitle: "CV-Josue-Torres-Narvaez",
-});
+  const handlePrint = useReactToPrint({
+    // ✅ Tipos correctos
+    contentRef: sectionRef,
+    documentTitle: "CV-Josue-Torres-Narvaez",
+  });
 
 
   return (
@@ -25,20 +27,15 @@ const handlePrint = useReactToPrint({
           className="w-32 h-32 mx-auto rounded-full object-cover"
         />
         <h1 className="text-2xl font-bold">Josué Torres Narvaez</h1>
-        <p className="text-base">Ingeniero en Computación | TEC</p>
+        <p className="text-base">{t("carreer")} | TEC</p>
       </div>
 
       {/* Biografía */}
       <Card>
         <CardContent className="p-6">
-          <h2 className="text-xl font-semibold mb-2">Biografía profesional</h2>
+          <h2 className="text-xl font-semibold mb-2">{t("profetionalBiography")}</h2>
           <p>
-            Soy estudiante avanzado de Ingeniería en Computación en el Instituto
-            Tecnológico de Costa Rica (TEC). Apasionado por la
-            ciberseguridad, la inteligencia artificial y el desarrollo de
-            videojuegos. Mi objetivo profesional es aplicar mi formación
-            académica y habilidades técnicas en proyectos innovadores que
-            aporten valor a la sociedad.
+            {t("biograbhyDescription")}
           </p>
         </CardContent>
       </Card>
@@ -46,10 +43,10 @@ const handlePrint = useReactToPrint({
       {/* Habilidades */}
       <Card>
         <CardContent className="p-6">
-          <h2 className="text-xl font-semibold mb-4">Habilidades técnicas</h2>
+          <h2 className="text-xl font-semibold mb-4">{t("technicalSkills")}</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div>
-              <h3 className="font-medium">Lenguajes</h3>
+              <h3 className="font-medium">{t("languages")}</h3>
               <ul className="list-disc list-inside text-sm">
                 <li>JavaScript / TypeScript</li>
                 <li>Python</li>
@@ -65,7 +62,7 @@ const handlePrint = useReactToPrint({
               </ul>
             </div>
             <div>
-              <h3 className="font-medium">Herramientas</h3>
+              <h3 className="font-medium">{t("tools")}</h3>
               <ul className="list-disc list-inside text-sm">
                 <li>Git / GitHub</li>
                 <li>Docker</li>
@@ -79,10 +76,10 @@ const handlePrint = useReactToPrint({
       {/* Certificaciones */}
       <Card>
         <CardContent className="p-6">
-          <h2 className="text-xl font-semibold mb-4">Certificaciones</h2>
+          <h2 className="text-xl font-semibold mb-4">{t("certyfications")}</h2>
           <ul className="list-disc list-inside space-y-1 text-sm">
             <li>
-              Curso de Introducción a la Ciberseguridad –{" "}
+              {t("certyficationsList.1")} –{" "}
               <a
                 href="https://www.netacad.com/"
                 className="underline"
@@ -92,7 +89,7 @@ const handlePrint = useReactToPrint({
               </a>
             </li>
             <li>
-              Taller de Desarrollo Web Moderno –{" "}
+              {t("certyficationsList.2")} –{" "}
               <a
                 href="https://platzi.com/"
                 className="underline"
@@ -109,7 +106,7 @@ const handlePrint = useReactToPrint({
       <Card>
         <CardContent className="p-6">
           <h2 className="text-xl font-semibold mb-4">
-            Redes profesionales
+            {t("contacts")}
           </h2>
           <div className="flex gap-4">
             <a
@@ -132,7 +129,7 @@ const handlePrint = useReactToPrint({
 
       {/* Botón de exportar a PDF */}
       <div className="text-center">
-        <Button onClick={handlePrint}>Descargar CV en PDF</Button>
+        <Button onClick={handlePrint}>{t("donwloadCV")}</Button>
       </div>
     </section>
   );

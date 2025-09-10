@@ -3,8 +3,10 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useTranslations } from "next-intl";
 
 export default function RecommendationsSection() {
+  const t = useTranslations("Recomendation");
   const [comments, setComments] = useState<any[]>([]);
   const [newComment, setNewComment] = useState("");
 
@@ -30,9 +32,12 @@ export default function RecommendationsSection() {
   return (
     <section className="w-full max-w-4xl mx-auto space-y-6">
       <div className="text-center">
-        <h2 className="text-2xl font-bold">Recomendaciones de compañeros</h2>
+        <h2 className="text-2xl font-bold">{t("title")}</h2>
+        <h3 className="text-sm">
+          {t("description")} 🚀
+        </h3>
         <p className="text-sm">
-          Deja tu comentario sobre mi desempeño, colaboración o habilidades 🚀
+          {t("formTitle")}
         </p>
       </div>
 
@@ -43,9 +48,9 @@ export default function RecommendationsSection() {
             value={newComment}
             onChange={(e) => setNewComment(e.target.value)}
             className="w-full rounded-lg border p-2 mb-4"
-            placeholder="Escribe tu recomendación aquí..."
+            placeholder={t("formPlaceholder")}
           />
-          <Button onClick={handleSubmit}>Enviar comentario</Button>
+          <Button onClick={handleSubmit}>{t("formButton")}</Button>
         </CardContent>
       </Card>
 

@@ -10,6 +10,8 @@
   --color-primary-offset: #90b42b;
   --color-prymary-hover: #a4ac0c;
   --color-secondary: #E55812;
+  --color-secondary-offset: #f06e36;
+  --color-secondary-hover: #d4450e;
 }
 
 .dark {
@@ -22,6 +24,8 @@
   --color-primary-offset: #dc59fd;
   --color-prymary-hover: #d426ff;
   --color-secondary: #2cb67d;
+  --color-secondary-offset: #2edb9a;
+  --color-secondary-hover: #0ee2b7;
 }
 
 body {
@@ -68,4 +72,13 @@ header {
 
 .secondary {
   background-color: var(--color-secondary);
+}
+
+.secondary-offset {
+  background-color: var(--color-secondary-offset);
+}
+
+.secondary-hover:hover {
+  background-color: var(--color-secondary-hover);
+  color: var(--color-bg);
 }
