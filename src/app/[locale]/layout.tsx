@@ -37,7 +37,7 @@ export default async function RootLayout({
 }: Readonly<RootLayoutProps>) { // Usa la nueva interfaz aquí
 
   // Ahora puedes acceder a 'locale' de forma segura
-  const { locale } = await params;
+  const { locale } = params;
 
   // Ya no necesitas 'as any' porque TypeScript sabe que 'locale' es un string
   if (!routing.locales.includes(locale)) {
