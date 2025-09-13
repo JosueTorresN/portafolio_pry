@@ -25,21 +25,21 @@ export default function Header() {
           <Link href="/" className="underline-color decoration-4 mx-2 hover:underline">
             {t("home")}
           </Link>
-          <Link href="/#projects" className="underline-color decoration-4 mx-2 hover:underline">
+          <Link href="/#courses" className="underline-color decoration-4 mx-2 hover:underline">
             {t("courses")}
           </Link>
-          <a href="#contact" className="underline-color decoration-4 mx-2 hover:underline">
+          <Link href="/#contact" className="underline-color decoration-4 mx-2 hover:underline">
             {t("info")}
-          </a>
-          <a href="#contact" className="underline-color decoration-4 mx-2 hover:underline">
+          </Link>
+          <Link href="/#recomendation" className="underline-color decoration-4 mx-2 hover:underline">
             {t("recomendation")}
-          </a>
-          <a href="#contact" className="underline-color decoration-4 mx-2 hover:underline">
+          </Link>
+          <Link href="/proyects" className="underline-color decoration-4 mx-2 hover:underline">
             {t("proyect")}
-          </a>
-          <a href="#contact" className="underline-color decoration-4 mx-2 hover:underline">
+          </Link>
+          <Link href="/hobbies" className="underline-color decoration-4 mx-2 hover:underline">
             {t("hobbies")}
-          </a>
+          </Link>
           <Link href="/block" className="underline-color decoration-4 mx-2 hover:underline">
             {t("blog")}
           </Link>

@@ -30,7 +30,7 @@ export default function RecommendationsSection() {
   };
 
   return (
-    <section className="w-full max-w-4xl mx-auto space-y-6">
+    <section className="w-full max-w-4xl mx-auto space-y-6" id="recomendation">
       <div className="text-center">
         <h2 className="text-2xl font-bold">{t("title")}</h2>
         <h3 className="text-sm">

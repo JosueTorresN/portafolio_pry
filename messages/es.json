@@ -184,5 +184,112 @@
             "content": "### Introducción\n\nSOLID es...",
             "featured": "false"
         }
+    },
+    "Projects": {
+        "title": "Proyectos Personales",
+        "description": "Una colección de proyectos personales desarrollados para aprender, experimentar y resolver problemas reales.",
+        "recent": "Más Recientes",
+        "latest": "Más Antiguos",
+        "search": "Buscar proyectos",
+        "technologies": "Tecnologías",
+        "all": "Todos",
+        "cleanFilters": "Limpiar Filtros",
+        "read": "Leer",
+        "noFound": "No se encontraron proyectos.",
+        "closed": "Cerrar",
+        "outstanding": "Destacado",
+        "cont": "3",
+        "1": {
+            "id": "pr1",
+            "title": "Gestor de Tareas con React y Firebase",
+            "date": "2024-07-15",
+            "image": "/images/projects/todo-app.png",
+            "tags": {
+                "cont": "2",
+                "1": "frontend",
+                "2": "productividad"
+            },
+            "tech": {
+                "cont": "3",
+                "1": "React",
+                "2": "Firebase",
+                "3": "TailwindCSS"
+            },
+            "excerpt": "Aplicación web para gestionar tareas con autenticación y almacenamiento en tiempo real usando Firebase.",
+            "content": "## Descripción\nEste proyecto consiste en un gestor de tareas que permite crear, editar y eliminar tareas. Incluye autenticación de usuarios y sincronización en tiempo real usando Firebase Firestore.\n\n### Características\n- CRUD de tareas\n- Autenticación con Google\n- Interfaz moderna con TailwindCSS",
+            "featured": "true"
+        },
+        "2": {
+            "id": "pr2",
+            "title": "API REST de Biblioteca",
+            "date": "2024-10-02",
+            "image": "/images/projects/godot-game.png",
+            "tags": {
+                "cont": "2",
+                "1": "backend",
+                "2": "api"
+            },
+            "tech": {
+                "cont": "3",
+                "1": "Node.js",
+                "2": "Express",
+                "3": "MongoDB"
+            },
+            "excerpt": "API RESTful que gestiona libros, autores y usuarios para una biblioteca digital.",
+            "content": "### Descripción\nAPI REST desarrollada en Node.js con Express y MongoDB. Permite registrar libros, autores y gestionar préstamos de usuarios.\n\n### Endpoints\n- `/books` → CRUD de libros\n- `/authors` → CRUD de autores\n- `/users` → registro y autenticación de usuarios",
+            "featured": "false"
+        },
+        "3": {
+            "id": "pr3",
+            "title": "Juego 2D estilo retro",
+            "date": "2025-01-21",
+            "image": "/images/projects/fastapi.png",
+            "tags": {
+                "cont": "2",
+                "1": "videojuegos",
+                "2": "pixel-art"
+            },
+            "tech": {
+                "cont": "2",
+                "1": "Godot",
+                "2": "GDScript"
+            },
+            "excerpt": "Juego 2D de plataformas con estética retro, creado con Godot Engine y sprites en pixel-art.",
+            "content": "### Introducción\nUn proyecto personal para aprender desarrollo de videojuegos usando Godot Engine.\n\n### Características\n- Mecánica de plataformas clásica\n- Sprites hechos a mano en pixel-art\n- Niveles con aumento progresivo de dificultad",
+            "featured": "false"
+        }
+    },
+    "Hobbies": {
+        "title": "Mis Hobbies",
+        "description": "Una colección de intereses personales que disfruto en mi tiempo libre.",
+        "cont": "4",
+        "1":
+        {
+            "id": "h1",
+            "title": "Juegos",
+            "image": "/images/juegos.jpg",
+            "description": "Videojuegos como pasatiempo y forma de entretenimiento."
+        },
+        "2":
+        {
+            "id": "h2",
+            "title": "Programación de juegos",
+            "image": "/images/programacion.jpg",
+            "description": "Crear y experimentar con mecánicas y prototipos de videojuegos."
+        },
+        "3":
+        {
+            "id": "h3",
+            "title": "Manga",
+            "image": "/images/manga.jpg",
+            "description": "Lectura y colección de mangas japoneses de distintos géneros."
+        },
+        "4":
+        {
+            "id": "h4",
+            "title": "Política",
+            "image": "/images/politica.jpg",
+            "description": "Interés en la actualidad, debates y análisis político."
+        }
     }
 }

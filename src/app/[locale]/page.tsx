@@ -9,7 +9,6 @@ import Profile from "@/components/profile";
 import RecommendationsSection from "@/components/recomendation";
 
 export default function Home() {
-  const t = useTranslations("Homepage");
 
   return (
     <div className="grid min-h-screen grid-rows-[auto_1fr_auto] transition-all duration-500">

@@ -18,7 +18,7 @@ export default function ProfileSection() {
 
 
   return (
-    <section ref={sectionRef} className="w-full max-w-5xl mx-auto space-y-8">
+    <section ref={sectionRef} className="w-full max-w-5xl mx-auto space-y-8" id="contact">
       {/* Encabezado */}
       <div className="text-center space-y-2">
         <img
