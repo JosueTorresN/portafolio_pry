@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main   # 👈 Cada vez que hagas push a main
+      - master   # 👈 Cada vez que hagas push a main
 
 jobs:
   build:
