@@ -23,12 +23,12 @@ export const metadata: Metadata = {
   description: "This is my personal portfolio where I share my projects and experiences.",
 };
 
-type params = Promise<{ locale: "en" | "es"; }>;
+// type params = Promise<{ locale: "en" | "es"; }>;
 
 // Define una interfaz para las props del Layout
 interface RootLayoutProps {
   children: React.ReactNode;
-  params: params;
+  params: { locale: string };
 }
 
 export default async function RootLayout({
@@ -39,8 +39,11 @@ export default async function RootLayout({
   // Ahora puedes acceder a 'locale' de forma segura
   const { locale } = await params;
 
+  const allowedLocales = ["en", "es"];
+
   // Ya no necesitas 'as any' porque TypeScript sabe que 'locale' es un string
-  if (!routing.locales.includes(locale)) {
+  // if (!routing.locales.includes(locale)) {
+  if (!allowedLocales.includes(locale)) {
     notFound();
   }
 
