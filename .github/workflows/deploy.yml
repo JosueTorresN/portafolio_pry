@@ -33,4 +33,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: build        # 👈 rama destino
-          folder: out          # 👈 carpeta generada (usa .next si no exportas)
+          folder: .next          # 👈 carpeta generada (usa .next si no exportas)
