@@ -8,6 +8,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # This is necessary for the bot to write to the repository
+      pages: write # This is necessary for GitHub Pages deployments
+      id-token: write # This is necessary for authentication
 
     steps:
       # 1. Descargar repo
