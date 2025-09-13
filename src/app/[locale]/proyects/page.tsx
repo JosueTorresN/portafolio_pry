@@ -13,7 +13,7 @@ export default function ProjectsPage() {
   const [selectedTech, setSelectedTech] = useState("");
   const [sort, setSort] = useState("newest");
   const [activeProject, setActiveProject] = useState<any>(null);
-  const PROJECTS = translationsProyects();
+  const PROJECTS = translationsProyects(t);
 
   // Tags únicos
   const allTags = useMemo(() => {

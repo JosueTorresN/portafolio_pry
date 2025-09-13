@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
-export const translationsBlogs = () => {
-    const t = useTranslations("Blog");
+export const translationsBlogs = (t: (key: string) => string) => {
+    // const t = useTranslations("Blog");
     const cont = parseInt(t("cont"));
     const blogs = [];
     for (let i = 1; i <= cont; i++) {
@@ -22,8 +22,8 @@ export const translationsBlogs = () => {
     return blogs;
 };
 
-export const translationsProyects = () => {
-    const t = useTranslations("Projects");
+export const translationsProyects = (t: (key: string) => string) => {
+    // const t = useTranslations("Projects");
     const cont = parseInt(t("cont"));
     const Proyects = [];
     for (let i = 1; i <= cont; i++) {
@@ -45,8 +45,8 @@ export const translationsProyects = () => {
     return Proyects;
 }
 
-export const translationsHobbies = () => {
-    const t = useTranslations("Hobbies");
+export const translationsHobbies = (t: (key: string) => string) => {
+    // const t = useTranslations("Hobbies");
     const cont = parseInt(t("cont"));
     const hobbies = [];
     for (let i = 1; i <= cont; i++) {

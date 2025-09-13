@@ -4,8 +4,8 @@ import { useTranslations } from "next-intl";
 import {translationsHobbies} from "@/utils/traslationList";
 
 export default function HobbiesPage() {
-  const hobbies = translationsHobbies();
   const t = useTranslations("Hobbies");
+  const hobbies = translationsHobbies(t);
 
   return (
     <main className="min-h-screen bg-bg text-text p-6 md:p-12">

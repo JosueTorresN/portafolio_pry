@@ -12,7 +12,7 @@ export default function BlockPage() {
     const [selectedTech, setSelectedTech] = useState("");
     const [sort, setSort] = useState("newest");
     const [activePost, setActivePost] = useState(null);
-    const POSTS = translationsBlogs();
+    const POSTS = translationsBlogs(t);
 
     const allTags: string[] = useMemo(() => {
         const s = new Set<string>();
