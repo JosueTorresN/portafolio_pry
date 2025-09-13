@@ -34,10 +34,10 @@ interface RootLayoutProps {
 export default async function RootLayout({
   children,
   params
-}: Readonly<RootLayoutProps>) { // Usa la nueva interfaz aquí
+}: RootLayoutProps) { // Usa la nueva interfaz aquí
 
   // Ahora puedes acceder a 'locale' de forma segura
-  const { locale } = params;
+  const { locale } = await params;
 
   // Ya no necesitas 'as any' porque TypeScript sabe que 'locale' es un string
   if (!routing.locales.includes(locale)) {

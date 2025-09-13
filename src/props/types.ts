@@ -47,4 +47,11 @@ export interface GitHubComment {
   };
 }
 
+export interface RootLayoutProps {
+  children: React.ReactNode;
+  params: {
+    locale: string;
+  };
+}
+
 export type { CourseProps, CoursesProps };
