@@ -21,23 +21,19 @@ interface CoursesProps {
     courses: CourseProps[];
 }
 
-export interface Project {
+export type Project = {
   id: string;
   title: string;
-  date: string; // podrías usar Date si lo parseas
+  date: string;
   image: string;
-  tags: {
-    cont: string;
-    [key: string]: string;
-  };
-  tech: {
-    cont: string;
-    [key: string]: string;
-  };
+  taggCont: number;
+  tags: string[];
+  techCont: number;
+  tech: string[];
   excerpt: string;
   content: string;
-  featured: boolean; // si lo usas como boolean, mejor cambiarlo a boolean
-}
+  featured: boolean;
+};
 
 export interface GitHubComment {
   id: number;

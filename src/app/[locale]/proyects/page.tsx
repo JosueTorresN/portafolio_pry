@@ -13,7 +13,7 @@ export default function ProjectsPage() {
   const [selectedTag, setSelectedTag] = useState("");
   const [selectedTech, setSelectedTech] = useState("");
   const [sort, setSort] = useState("newest");
-  const [activeProject, setActiveProject] = useState<Project>();
+  const [activeProject, setActiveProject] = useState<Project | undefined>();
   const PROJECTS = translationsProyects(t);
 
   // Tags únicos
@@ -201,7 +201,7 @@ export default function ProjectsPage() {
           <div className="fixed inset-0 z-50 flex items-center justify-center p-6">
             <div
               className="absolute inset-0 bg-black/40"
-              onClick={() => setActiveProject(null)}
+              onClick={() => setActiveProject(undefined)}
             />
             <div className="relative max-w-3xl w-full surface-offset p-6 rounded-lg shadow-lg z-10 overflow-auto max-h-[90vh] border border-border">
               <header className="flex items-start justify-between gap-4">
@@ -212,7 +212,7 @@ export default function ProjectsPage() {
                   </p>
                 </div>
                 <button
-                  onClick={() => setActiveProject(null)}
+                  onClick={() => setActiveProject(undefined)}
                   className="text-text-offset"
                 >
                   {t("closed")}
