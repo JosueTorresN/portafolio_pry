@@ -1,0 +1,9 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/comments/route": "/api/comments",
+  "/favicon.ico/route": "/favicon.ico",
+  "/[locale]/hobbies/page": "/[locale]/hobbies",
+  "/[locale]/page": "/[locale]",
+  "/[locale]/block/page": "/[locale]/block",
+  "/[locale]/proyects/page": "/[locale]/proyects"
+}
