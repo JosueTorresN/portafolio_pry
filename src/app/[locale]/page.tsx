@@ -13,14 +13,14 @@ export default function Home() {
   return (
     <div className="grid min-h-screen grid-rows-[auto_1fr_auto] transition-all duration-500">
       <div>
-        <main>
+        <main className="space-y-20"> {/* 👈 agrega separación vertical */}
           <div>
-            <CardsContainer/>
+            <CardsContainer />
           </div>
           <div>
-            <Profile/>
+            <Profile />
           </div>
-            <RecommendationsSection />
+          <RecommendationsSection />
         </main>
       </div>
       <Footer />

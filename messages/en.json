@@ -32,6 +32,8 @@
         "knowlaged3": "Web Developer"
     },
     "Courses": {
+        "title": "Relevant Courses",
+        "description": "A selection of university courses that have significantly contributed to my academic and professional development.",
         "cont": "2",
         "1": {
             "code": "IC8057",

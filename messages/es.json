@@ -32,6 +32,8 @@
         "knowlaged3": "Desarrollador Web"
     },
     "Courses": {
+        "title": "Cursos Relevantes",
+        "description": "Una selección de cursos universitarios que han contribuido significativamente a mi formación académica y profesional.",
         "cont": "2",
         "1": {
                 "code": "IC1234",

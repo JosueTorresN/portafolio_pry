@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import ThemeToggle from "./themeToggle";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing"
+import  LanguageToggle  from "./LanguageToggle";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,7 +45,11 @@ export default function Header() {
             {t("blog")}
           </Link>
         </nav>
-        <ThemeToggle />
+        <div className="flex items-center space-x-4">
+          <ThemeToggle />
+          <LanguageToggle />
+        </div>
+
       </div>
 
       {/* Info personal (debajo del navbar, se oculta al hacer scroll) */}
