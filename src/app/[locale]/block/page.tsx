@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import { format } from "date-fns";
 import { useTranslations } from "next-intl";
 import {translationsBlogs} from "@/utils/traslationList";
+import { Post } from "@/props/types";
 
 export default function BlockPage() {
     const t = useTranslations("Blog");
@@ -11,7 +12,7 @@ export default function BlockPage() {
     const [selectedTag, setSelectedTag] = useState("");
     const [selectedTech, setSelectedTech] = useState("");
     const [sort, setSort] = useState("newest");
-    const [activePost, setActivePost] = useState(null);
+    const [activePost, setActivePost] = useState<Post | null>(null);
     const POSTS = translationsBlogs(t);
 
     const allTags: string[] = useMemo(() => {

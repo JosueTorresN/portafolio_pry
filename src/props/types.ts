@@ -54,4 +54,17 @@ export interface RootLayoutProps {
   };
 }
 
+export interface Post {
+  id: string;
+  title: string;
+  date: string;
+  taggCont: number;
+  tags: string[];
+  techCont: number;
+  tech: string[];
+  excerpt: string;
+  content: string;
+  featured: boolean;
+}
+
 export type { CourseProps, CoursesProps };
