@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description: "This is my personal portfolio where I share my projects and experiences.",
 };
 
-type params = Promise<{ locale: string }>;
+type params = Promise<{ locale: "en" | "es"; }>;
 
 // Define una interfaz para las props del Layout
 interface RootLayoutProps {
