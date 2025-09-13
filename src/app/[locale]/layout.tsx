@@ -23,30 +23,38 @@ export const metadata: Metadata = {
   description: "This is my personal portfolio where I share my projects and experiences.",
 };
 
+// Define una interfaz para las props del Layout
+interface RootLayoutProps {
+  children: React.ReactNode;
+  params: {
+    locale: string;
+  };
+}
+
 export default async function RootLayout({
   children,
   params
-}: Readonly<{
-  children: React.ReactNode;
-  params: any
-}>) {
+}: Readonly<RootLayoutProps>) { // Usa la nueva interfaz aquí
 
-  const {locale} = await params;
-  if (!routing.locales.includes(locale as any)) {
+  // Ahora puedes acceder a 'locale' de forma segura
+  const { locale } = await params;
+
+  // Ya no necesitas 'as any' porque TypeScript sabe que 'locale' es un string
+  if (!routing.locales.includes(locale)) {
     notFound();
   }
 
   const messages = await getMessages();
   return (
-    <html lang="en">
+    <html lang={locale}> {/* Es una buena práctica poner el locale en la etiqueta html */}
       <Head />
-      <NextIntlClientProvider messages={messages}>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Header />
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          <Header />
           {children}
-      </body>
+        </body>
       </NextIntlClientProvider>
     </html>
   );

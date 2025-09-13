@@ -4,10 +4,11 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
+import { GitHubComment } from "@/props/types";
 
 export default function RecommendationsSection() {
   const t = useTranslations("Recomendation");
-  const [comments, setComments] = useState<any[]>([]);
+  const [comments, setComments] = useState<GitHubComment[]>([]);
   const [newComment, setNewComment] = useState("");
 
   useEffect(() => {

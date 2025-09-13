@@ -1,5 +1,3 @@
-import { useTranslations } from "next-intl";
-
 export const translationsBlogs = (t: (key: string) => string) => {
     // const t = useTranslations("Blog");
     const cont = parseInt(t("cont"));
@@ -40,6 +38,7 @@ export const translationsProyects = (t: (key: string) => string) => {
             content: t(`${i}.content`),
             featured: t(`${i}.featured`) === "true",
         };
+        console.log(`${i}.featured: ${t(`${i}.featured`)}, parsed to boolean: ${proyect.featured}`);
         Proyects.push(proyect);
     }
     return Proyects;

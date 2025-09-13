@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import { format } from "date-fns";
 import { useTranslations } from "next-intl";
 import {translationsProyects} from "@/utils/traslationList";
+import { Project } from "@/props/types";
 
 export default function ProjectsPage() {
   const t = useTranslations("Projects");
@@ -12,7 +13,7 @@ export default function ProjectsPage() {
   const [selectedTag, setSelectedTag] = useState("");
   const [selectedTech, setSelectedTech] = useState("");
   const [sort, setSort] = useState("newest");
-  const [activeProject, setActiveProject] = useState<any>(null);
+  const [activeProject, setActiveProject] = useState<Project>();
   const PROJECTS = translationsProyects(t);
 
   // Tags únicos
@@ -159,7 +160,7 @@ export default function ProjectsPage() {
                   </p>
                 </div>
                 {p.featured && (
-                  <span className="text-xs bg-secondary px-2 py-1 rounded text-white">
+                  <span className="text-xs px-2 py-1 rounded toggle-button">
                     {t("outstanding")}
                   </span>
                 )}

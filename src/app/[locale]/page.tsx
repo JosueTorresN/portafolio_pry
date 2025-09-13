@@ -1,8 +1,4 @@
 'use client';
-
-import Image from "next/image";
-import { useTranslations } from "next-intl";
-import { useEffect } from "react";
 import Footer from "@/components/footer";
 import CardsContainer from "@/components/proyectsCards";
 import Profile from "@/components/profile";
