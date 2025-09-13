@@ -23,12 +23,12 @@ export const metadata: Metadata = {
   description: "This is my personal portfolio where I share my projects and experiences.",
 };
 
+type params = Promise<{ locale: string }>;
+
 // Define una interfaz para las props del Layout
 interface RootLayoutProps {
   children: React.ReactNode;
-  params: {
-    locale: string;
-  };
+  params: params;
 }
 
 export default async function RootLayout({
