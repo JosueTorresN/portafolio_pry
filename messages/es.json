@@ -17,7 +17,8 @@
         "hideProjects": "Ocultar Proyectos",
         "repository": "Repositorio",
         "technologies": "Tecnologías",
-        "type": "Tipo"
+        "type": "Tipo",
+        "projects": "Proyectos"
     },
     "Header": {
         "home": "Inicio",

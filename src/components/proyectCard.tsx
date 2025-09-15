@@ -62,7 +62,7 @@ const Card: React.FC<CourseProps> = (props) => {
                 <select
                   value={filterType}
                   onChange={(e) => setFilterType(e.target.value)}
-                  className="border rounded p-2 text-sm w-full"
+                  className="border rounded p-2 w-full surface-offset"
                 >
                   <option value="">{evalualationType[0]}</option>
                   <option value={evalualationType[1]}>{evalualationType[1]}</option>
@@ -93,7 +93,7 @@ const Card: React.FC<CourseProps> = (props) => {
               </div>
 
               {/* Lista filtrada */}
-              <h3 className="text-lg font-semibold mb-2">Proyectos:</h3>
+              <h3 className="text-lg font-semibold mb-2">{t("projects")}:</h3>
               {filteredProjects.length > 0 ? (
                 <ul className="space-y-4">
                   {filteredProjects.map((project, index) => (

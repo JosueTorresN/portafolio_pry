@@ -17,7 +17,8 @@
         "hideProjects": "Hide Projects",
         "repository": "Repository",
         "technologies": "Technologies",
-        "type": "Type"
+        "type": "Type",
+        "projects": "Projects"
     },
     "Header": {
         "home": "Home",

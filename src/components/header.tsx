@@ -66,7 +66,7 @@ export default function Header() {
 
       {/* Menú desplegable móvil */}
       {menuOpen && (
-        <div className="sm:hidden flex flex-col space-y-2 px-8 py-4 border-b bg-white dark:bg-gray-900">
+        <div className="sm:hidden flex flex-col space-y-2 px-8 py-4 border-b">
           <Link href="/" className="hover:underline" onClick={() => setMenuOpen(false)}>
             {t("home")}
           </Link>
