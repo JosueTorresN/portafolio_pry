@@ -37,11 +37,11 @@ const Card: React.FC<CourseProps> = (props) => {
   return (
     <div className="primary mb-4 p-6 rounded-md shadow-sm">
       {/* Info del curso */}
-      <h2 className="text-xl font-bold mb-2">
+      <h2 className="text-lg sm:text-xl font-bold mb-2">
         {props.code} - {props.name}
       </h2>
-      <span className="text-sm mb-4 block">{props.semster}</span>
-      <p className="mb-4">{props.description}</p>
+      <span className="text-xs sm:text-sm mb-4 block">{props.semster}</span>
+      <p className="mb-4 text-sm sm:text-base">{props.description}</p>
 
       {/* Sección de proyectos colapsable */}
       {props.projects && props.projects.length > 0 && (
@@ -57,12 +57,12 @@ const Card: React.FC<CourseProps> = (props) => {
           {showProjects && (
             <div className="mt-4">
               {/* Filtros */}
-              <div className="mb-4 grid gap-2 sm:grid-cols-3">
+              <div className="mb-4 grid gap-2 grid-cols-1 sm:grid-cols-3">
                 {/* Tipo de evaluación */}
                 <select
                   value={filterType}
                   onChange={(e) => setFilterType(e.target.value)}
-                  className="border rounded p-2 text-sm"
+                  className="border rounded p-2 text-sm w-full"
                 >
                   <option value="">{evalualationType[0]}</option>
                   <option value={evalualationType[1]}>{evalualationType[1]}</option>
@@ -79,7 +79,7 @@ const Card: React.FC<CourseProps> = (props) => {
                   placeholder={`${t("searchTec")}: React`}
                   value={filterTech}
                   onChange={(e) => setFilterTech(e.target.value)}
-                  className="border rounded p-2 text-sm"
+                  className="border rounded p-2 text-sm w-full"
                 />
 
                 {/* Fecha */}
@@ -88,7 +88,7 @@ const Card: React.FC<CourseProps> = (props) => {
                   placeholder={`${t("example")}: 2024`}
                   value={filterDate}
                   onChange={(e) => setFilterDate(e.target.value)}
-                  className="border rounded p-2 text-sm"
+                  className="border rounded p-2 text-sm w-full"
                 />
               </div>
 
@@ -99,30 +99,26 @@ const Card: React.FC<CourseProps> = (props) => {
                   {filteredProjects.map((project, index) => (
                     <li
                       key={index}
-                      className="border rounded-lg p-4 shadow-sm flex gap-4 items-start"
+                      className="border rounded-lg p-4 shadow-sm flex flex-col sm:flex-row gap-4 items-start"
                     >
                       <img
                         src={project.image}
                         alt={project.title}
-                        className="w-20 h-20 object-cover rounded-md"
+                        className="w-full sm:w-20 sm:h-20 object-cover rounded-md"
                       />
                       <div>
                         <h4 className="font-bold">{project.title}</h4>
                         <p className="text-sm">{project.description}</p>
                         <p className="text-sm">{t("date")} : {project.date}</p>
-                        <p className="text-sm">
-                          {t("type")}: {project.tipe || "No especificado"}
-                        </p>
-                        <p className="text-sm">
-                          {t("technologies")}: {project.technologies.join(", ")}
-                        </p>
+                        <p className="text-sm">{t("type")}: {project.tipe || "No especificado"}</p>
+                        <p className="text-sm">{t("technologies")}: {project.technologies.join(", ")}</p>
                         <div className="mt-2 space-x-2">
                           {project.repositoryLink && (
                             <a
                               href={project.repositoryLink}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="underline-color decoration-4 mx-2 hover:underline"
+                              className="underline-color decoration-4 hover:underline"
                             >
                               {t("repository")}
                             </a>
@@ -132,7 +128,7 @@ const Card: React.FC<CourseProps> = (props) => {
                               href={project.liveDemoLink}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="underline-color decoration-4 mx-2 hover:underline"
+                              className="underline-color decoration-4 hover:underline"
                             >
                               Demo en vivo
                             </a>

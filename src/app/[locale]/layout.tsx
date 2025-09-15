@@ -49,7 +49,7 @@ export default async function RootLayout({
 
   const messages = await getMessages();
   return (
-    <html lang={locale}> {/* Es una buena práctica poner el locale en la etiqueta html */}
+    <html lang={locale}>
       <Head />
       <NextIntlClientProvider locale={locale} messages={messages}>
         <body

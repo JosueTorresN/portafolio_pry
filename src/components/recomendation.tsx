@@ -31,42 +31,59 @@ export default function RecommendationsSection() {
   };
 
   return (
-    <section className="w-full max-w-4xl mx-auto space-y-6" id="recomendation">
-      <div className="text-center">
-        <h2 className="text-2xl font-bold">{t("title")}</h2>
-        <h3 className="text-sm">
+    <section
+      className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6"
+      id="recomendation"
+    >
+      {/* Encabezado */}
+      <div className="text-center space-y-2">
+        <h2 className="text-xl sm:text-2xl font-bold">{t("title")}</h2>
+        <h3 className="text-sm sm:text-base text-gray-600">
           {t("description")} 🚀
         </h3>
-        <p className="text-sm">
+        <p className="text-xs sm:text-sm text-gray-500">
           {t("formTitle")}
         </p>
       </div>
 
       {/* Formulario */}
       <Card>
-        <CardContent>
+        <CardContent className="p-4 sm:p-6">
           <textarea
             value={newComment}
             onChange={(e) => setNewComment(e.target.value)}
-            className="w-full rounded-lg border p-2 mb-4"
+            className="w-full min-h-[100px] rounded-lg border border-gray-300 p-2 text-sm sm:text-base mb-4 resize-y focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder={t("formPlaceholder")}
           />
-          <Button onClick={handleSubmit}>{t("formButton")}</Button>
+          <div className="flex justify-end">
+            <Button
+              onClick={handleSubmit}
+              className="w-full sm:w-auto"
+            >
+              {t("formButton")}
+            </Button>
+          </div>
         </CardContent>
       </Card>
 
       {/* Lista de comentarios */}
       <div className="space-y-4">
-        {comments.map((c) => (
-          <Card key={c.id}>
-            <CardContent>
-              <p className="text-sm">{c.body}</p>
-              <span className="text-xs text-gray-500">
-                — {c.user?.login}
-              </span>
-            </CardContent>
-          </Card>
-        ))}
+        {comments.length > 0 ? (
+          comments.map((c) => (
+            <Card key={c.id}>
+              <CardContent className="p-4 sm:p-6">
+                <p className="text-sm sm:text-base">{c.body}</p>
+                <span className="text-xs text-gray-500 block mt-2">
+                  — {c.user?.login || "Anon"}
+                </span>
+              </CardContent>
+            </Card>
+          ))
+        ) : (
+          <p className="text-center text-gray-500 text-sm italic">
+            {t("noComments")}
+          </p>
+        )}
       </div>
     </section>
   );

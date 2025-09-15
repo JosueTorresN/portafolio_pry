@@ -11,30 +11,36 @@ export default function ProfileSection() {
   const t = useTranslations("CV");
   const sectionRef = useRef(null);
   const handlePrint = useReactToPrint({
-    // ✅ Tipos correctos
     contentRef: sectionRef,
     documentTitle: "CV-Josue-Torres-Narvaez",
   });
 
-
   return (
-    <section ref={sectionRef} className="w-full max-w-5xl mx-auto space-y-8" id="contact">
+    <section
+      ref={sectionRef}
+      className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8"
+      id="contact"
+    >
       {/* Encabezado */}
-      <div className="text-center space-y-2">
+      <div className="text-center space-y-3">
         <img
           src="/ruta-a-tu-foto.jpg"
           alt="Josué Torres Narvaez"
-          className="w-32 h-32 mx-auto rounded-full object-cover"
+          className="w-24 h-24 sm:w-32 sm:h-32 mx-auto rounded-full object-cover shadow-md"
         />
-        <h1 className="text-2xl font-bold">Josué Torres Narvaez</h1>
-        <p className="text-base">{t("carreer")} | TEC</p>
+        <h1 className="text-xl sm:text-2xl font-bold">Josué Torres Narvaez</h1>
+        <p className="text-sm sm:text-base text-gray-600">
+          {t("carreer")} | TEC
+        </p>
       </div>
 
       {/* Biografía */}
       <Card>
-        <CardContent className="p-6">
-          <h2 className="text-xl font-semibold mb-2">{t("profetionalBiography")}</h2>
-          <p>
+        <CardContent className="p-4 sm:p-6">
+          <h2 className="text-lg sm:text-xl font-semibold mb-2">
+            {t("profetionalBiography")}
+          </h2>
+          <p className="text-sm sm:text-base leading-relaxed">
             {t("biograbhyDescription")}
           </p>
         </CardContent>
@@ -42,9 +48,11 @@ export default function ProfileSection() {
 
       {/* Habilidades */}
       <Card>
-        <CardContent className="p-6">
-          <h2 className="text-xl font-semibold mb-4">{t("technicalSkills")}</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <CardContent className="p-4 sm:p-6">
+          <h2 className="text-lg sm:text-xl font-semibold mb-4">
+            {t("technicalSkills")}
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <div>
               <h3 className="font-medium">{t("languages")}</h3>
               <ul className="list-disc list-inside text-sm">
@@ -75,14 +83,16 @@ export default function ProfileSection() {
 
       {/* Certificaciones */}
       <Card>
-        <CardContent className="p-6">
-          <h2 className="text-xl font-semibold mb-4">{t("certyfications")}</h2>
-          <ul className="list-disc list-inside space-y-1 text-sm">
+        <CardContent className="p-4 sm:p-6">
+          <h2 className="text-lg sm:text-xl font-semibold mb-4">
+            {t("certyfications")}
+          </h2>
+          <ul className="list-disc list-inside space-y-2 text-sm sm:text-base">
             <li>
               {t("certyficationsList.1")} –{" "}
               <a
                 href="https://www.netacad.com/"
-                className="underline"
+                className="underline text-blue-600"
                 target="_blank"
               >
                 Cisco NetAcad
@@ -92,7 +102,7 @@ export default function ProfileSection() {
               {t("certyficationsList.2")} –{" "}
               <a
                 href="https://platzi.com/"
-                className="underline"
+                className="underline text-green-600"
                 target="_blank"
               >
                 Platzi
@@ -104,11 +114,11 @@ export default function ProfileSection() {
 
       {/* Redes profesionales */}
       <Card>
-        <CardContent className="p-6">
-          <h2 className="text-xl font-semibold mb-4">
+        <CardContent className="p-4 sm:p-6">
+          <h2 className="text-lg sm:text-xl font-semibold mb-4">
             {t("contacts")}
           </h2>
-          <div className="flex gap-4">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
             <a
               href="https://www.linkedin.com/in/josué-torres-a92a801a3"
               target="_blank"
@@ -129,7 +139,9 @@ export default function ProfileSection() {
 
       {/* Botón de exportar a PDF */}
       <div className="text-center">
-        <Button onClick={handlePrint}>{t("donwloadCV")}</Button>
+        <Button onClick={handlePrint} className="w-full sm:w-auto">
+          {t("donwloadCV")}
+        </Button>
       </div>
     </section>
   );

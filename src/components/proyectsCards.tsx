@@ -48,22 +48,27 @@ const CardsContainer: React.FC = () => {
   const courses = getCourses();
 
   return (
-    <section className="flex flex-col items-center justify-center p-8" id="courses">
-      <h2 className="text-3xl font-bold mb-6">{t("title")}</h2>
-      <p className="mb-6 text-center max-w-2xl">{t("description")}</p>
-      <div className="w-1/2 
-      min-h-[2rem] 
-      max-h-[100vh] 
-      overflow-y-auto 
-      p-4 
-      rounded-lg 
-      shadow-lg 
-      scrollbar-thin 
-      scrollbar-track-transparent 
-      scrollbar-thumb-transparent 
-      hover:scrollbar-thumb-gray-400
-      surface-offset 
-      border-color">
+    <section className="flex flex-col items-center justify-center p-4 sm:p-8" id="courses">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">{t("title")}</h2>
+      <p className="mb-6 text-center max-w-2xl px-2">{t("description")}</p>
+
+      <div
+        className="
+          w-full sm:w-3/4 lg:w-1/2
+          min-h-[2rem] 
+          max-h-[50vh] 
+          overflow-y-auto 
+          p-4 
+          rounded-lg 
+          shadow-lg 
+          scrollbar-thin 
+          scrollbar-track-transparent 
+          scrollbar-thumb-transparent 
+          hover:scrollbar-thumb-gray-400
+          surface-offset 
+          border-color
+        "
+      >
         {courses.map((course, index) => (
           <ProyectCard
             key={course.code || `course-${index}`}
