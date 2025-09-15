@@ -19,10 +19,19 @@
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
       "static/chunks/255-40634877ae3e8e9d.js",
       "static/chunks/main-app-e138fa30324e22c8.js",
-      "static/css/6678a437ab0d035a.css",
+      "static/css/028eb5b2aeac5945.css",
       "static/chunks/955-abb533d52df42736.js",
-      "static/chunks/177-61b9047919e63333.js",
-      "static/chunks/app/[locale]/layout-669e1baf23497b6b.js"
+      "static/chunks/974-d8c69a30682f719f.js",
+      "static/chunks/app/[locale]/layout-193bf1a0afb53f21.js"
+    ],
+    "/[locale]/block/page": [
+      "static/chunks/webpack-e921348ccf18198a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-40634877ae3e8e9d.js",
+      "static/chunks/main-app-e138fa30324e22c8.js",
+      "static/chunks/955-abb533d52df42736.js",
+      "static/chunks/799-f8f54e7ba2bb0a5e.js",
+      "static/chunks/app/[locale]/block/page-32fa779ae22e6f60.js"
     ],
     "/[locale]/hobbies/page": [
       "static/chunks/webpack-e921348ccf18198a.js",
@@ -38,16 +47,7 @@
       "static/chunks/255-40634877ae3e8e9d.js",
       "static/chunks/main-app-e138fa30324e22c8.js",
       "static/chunks/955-abb533d52df42736.js",
-      "static/chunks/app/[locale]/page-7a5a0ba570764188.js"
-    ],
-    "/[locale]/block/page": [
-      "static/chunks/webpack-e921348ccf18198a.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-40634877ae3e8e9d.js",
-      "static/chunks/main-app-e138fa30324e22c8.js",
-      "static/chunks/955-abb533d52df42736.js",
-      "static/chunks/799-f8f54e7ba2bb0a5e.js",
-      "static/chunks/app/[locale]/block/page-32fa779ae22e6f60.js"
+      "static/chunks/app/[locale]/page-b39899f9eb237e10.js"
     ],
     "/[locale]/proyects/page": [
       "static/chunks/webpack-e921348ccf18198a.js",
