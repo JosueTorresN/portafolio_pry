@@ -38,10 +38,10 @@ export default function RecommendationsSection() {
       {/* Encabezado */}
       <div className="text-center space-y-2">
         <h2 className="text-xl sm:text-2xl font-bold">{t("title")}</h2>
-        <h3 className="text-sm sm:text-base text-gray-600">
+        <h3 className="text-sm sm:text-base">
           {t("description")} 🚀
         </h3>
-        <p className="text-xs sm:text-sm text-gray-500">
+        <p className="text-xs sm:text-sm">
           {t("formTitle")}
         </p>
       </div>
@@ -52,7 +52,7 @@ export default function RecommendationsSection() {
           <textarea
             value={newComment}
             onChange={(e) => setNewComment(e.target.value)}
-            className="w-full min-h-[100px] rounded-lg border border-gray-300 p-2 text-sm sm:text-base mb-4 resize-y focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full min-h-[100px] rounded-lg border border-gray-300 p-2 sm:text-base mb-4 resize-y focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder={t("formPlaceholder")}
           />
           <div className="flex justify-end">
@@ -80,7 +80,7 @@ export default function RecommendationsSection() {
             </Card>
           ))
         ) : (
-          <p className="text-center text-gray-500 text-sm italic">
+          <p className="text-center text-gray-500 italic">
             {t("noComments")}
           </p>
         )}

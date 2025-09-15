@@ -91,7 +91,7 @@ export default function ProjectsPage() {
               <button
                 onClick={() => setSelectedTag("")}
                 className={`px-2 py-1 rounded text-sm border border-border ${
-                  selectedTag === "" ? "bg-primary text-white" : "bg-bg-offset text-text"
+                  selectedTag === "" ? "primary text-text" : "primary-hover primary-offset text-text--offset"
                 }`}
               >
                 {t("all")}
@@ -101,7 +101,7 @@ export default function ProjectsPage() {
                   key={t}
                   onClick={() => setSelectedTag(t)}
                   className={`px-2 py-1 rounded text-sm border border-border ${
-                    selectedTag === t ? "bg-primary text-white" : "bg-bg-offset text-text"
+                    selectedTag === t ? "secondary text-white" : "secondary-hover text-text"
                   }`}
                 >
                   {t}
@@ -135,7 +135,7 @@ export default function ProjectsPage() {
               }}
               className="ml-auto text-sm text-red-600 underline"
             >
-              {t("clearFilters")}
+              {t("cleanFilters")}
             </button>
           ) : null}
         </section>

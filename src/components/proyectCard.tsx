@@ -62,7 +62,7 @@ const Card: React.FC<CourseProps> = (props) => {
                 <select
                   value={filterType}
                   onChange={(e) => setFilterType(e.target.value)}
-                  className="border rounded p-2 w-full surface-offset"
+                  className="border rounded p-2 w-full surface-offset text-text"
                 >
                   <option value="">{evalualationType[0]}</option>
                   <option value={evalualationType[1]}>{evalualationType[1]}</option>
@@ -79,7 +79,7 @@ const Card: React.FC<CourseProps> = (props) => {
                   placeholder={`${t("searchTec")}: React`}
                   value={filterTech}
                   onChange={(e) => setFilterTech(e.target.value)}
-                  className="border rounded p-2 text-sm w-full"
+                  className="border rounded p-2 w-full surface-offset"
                 />
 
                 {/* Fecha */}
@@ -88,7 +88,7 @@ const Card: React.FC<CourseProps> = (props) => {
                   placeholder={`${t("example")}: 2024`}
                   value={filterDate}
                   onChange={(e) => setFilterDate(e.target.value)}
-                  className="border rounded p-2 text-sm w-full"
+                  className="border rounded p-2 w-full surface-offset"
                 />
               </div>
 
