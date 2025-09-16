@@ -5,6 +5,7 @@ import { format } from "date-fns";
 import { useTranslations } from "next-intl";
 import {translationsProyects} from "@/utils/traslationList";
 import { Project } from "@/props/types";
+import Image from "next/image";
 
 export default function ProjectsPage() {
   const t = useTranslations("Projects");
@@ -147,10 +148,14 @@ export default function ProjectsPage() {
               key={p.id}
               className="bg-bg-offset p-6 rounded-lg shadow-sm border border-border"
             >
-              <img
+              <Image
                 src={p.image}
                 alt={p.title}
-                className="w-full h-40 object-cover rounded mb-4"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: "100%", height: "160px" }} // equivale a h-40
+                className="object-cover rounded mb-4"
               />
               <div className="flex items-start justify-between">
                 <div>

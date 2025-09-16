@@ -52,7 +52,7 @@ export default function RecommendationsSection() {
           <textarea
             value={newComment}
             onChange={(e) => setNewComment(e.target.value)}
-            className="w-full min-h-[100px] rounded-lg border border-gray-300 p-2 sm:text-base mb-4 resize-y focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full min-h-[100px] rounded-lg border p-2 mb-4 resize-y focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder={t("formPlaceholder")}
           />
           <div className="flex justify-end">

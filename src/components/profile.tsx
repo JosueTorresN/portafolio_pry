@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Github, Linkedin } from "lucide-react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+import ProfileImage from "/body_profile.png"; 
 
 export default function ProfileSection() {
   const t = useTranslations("CV");
@@ -23,9 +25,11 @@ export default function ProfileSection() {
     >
       {/* Encabezado */}
       <div className="text-center space-y-3">
-        <img
-          src="/ruta-a-tu-foto.jpg"
+        <Image
+          src="/body_profile.png"
           alt="Josué Torres Narvaez"
+          width={128} // tamaño base
+          height={128}
           className="w-24 h-24 sm:w-32 sm:h-32 mx-auto rounded-full object-cover shadow-md"
         />
         <h1 className="text-xl sm:text-2xl font-bold">Josué Torres Narvaez</h1>

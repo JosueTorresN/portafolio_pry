@@ -47,7 +47,7 @@
                         "title": "Sitio Web de Portafolio Personal",
                         "tipe": "Laboratorio",
                         "description": "Un sitio web de portafolio personal para mostrar mis proyectos y habilidades, construido con HTML, CSS y JavaScript.",
-                        "image": "/images/portfolio.png",
+                        "image": "/web.png",
                         "date": "2024-10-15",
                         "tech": "HTML*CSS*JavaScript",
                         "repository": "www.github.com/username/portfolio",
@@ -57,7 +57,7 @@
                         "title": "Plantilla de Blog Responsiva",
                         "tipe": "Proyecto",
                         "description": "Una plantilla de blog responsiva diseñada para dispositivos móviles y de escritorio, utilizando principios modernos de diseño web.",
-                        "image": "/images/blog_template.png",
+                        "image": "/web.png",
                         "date": "2024-11-20",
                         "tech": "HTML*CSS*JavaScript",
                         "repository": "www.github.com/username/blog-template",
@@ -67,26 +67,26 @@
             },
          "2": {
                 "code": "IC8057",
-                "name": "Introducción al Desarrollo de Páginas Web 2",
+                "name": "Introducción al Desarrollo de Páginas Web",
                 "semester": "Semestre 2, 2025",
-                "description": "Este curso introduce a los estudiantes en el desarrollo de páginas web utilizando HTML, CSS y JavaScript. Se enfoca en la creación de sitios web responsivos y accesibles, pero 2.",
+                "description": "Este curso introduce a los estudiantes en el desarrollo de páginas web utilizando HTML, CSS y JavaScript. Se enfoca en la creación de sitios web responsivos y accesibles.",
                 "works": {
                     "cont": "2",
                     "1": {
-                        "title": "Sitio Web de Portafolio Personal",
+                        "title": "Características del desarrollo web moderno",
                         "tipe": "Laboratorio",
-                        "description": "Un sitio web de portafolio personal para mostrar mis proyectos y habilidades, construido con HTML, CSS y JavaScript.",
-                        "image": "/images/portfolio.png",
-                        "date": "2024-10-15",
-                        "tech": "HTML*CSS*JavaScript",
-                        "repository": "www.github.com/username/portfolio",
-                        "link": "www.username.com"   
+                        "description": "El estudiante investigará y documentará cinco categorías clave del desarrollo web actual, con base en fuentes confiables y ejemplos reales.",
+                        "image": "/web.png",
+                        "date": "2025-08-10",
+                        "tech": "HTML*Markdown*JavaScript",
+                        "repository": "https://github.com/JosueTorresN/desarrollo-moderno-JosueTorres.git",
+                        "link": "https://mellow-dusk-c80b05.netlify.app"   
                     },
                     "2": {
                         "title": "Plantilla de Blog Responsiva",
                         "tipe": "Proyecto",
                         "description": "Una plantilla de blog responsiva diseñada para dispositivos móviles y de escritorio, utilizando principios modernos de diseño web.",
-                        "image": "/images/blog_template.png",
+                        "image": "/web.png",
                         "date": "2024-11-20",
                         "tech": "HTML*CSS*JavaScript*Bootstrap",
                         "repository": "www.github.com/username/blog-template",
@@ -206,7 +206,7 @@
             "id": "pr1",
             "title": "Gestor de Tareas con React y Firebase",
             "date": "2024-07-15",
-            "image": "/images/projects/todo-app.png",
+            "image": "/firebase.png",
             "tags": {
                 "cont": "2",
                 "1": "frontend",
@@ -226,7 +226,7 @@
             "id": "pr2",
             "title": "API REST de Biblioteca",
             "date": "2024-10-02",
-            "image": "/images/projects/godot-game.png",
+            "image": "/api.png",
             "tags": {
                 "cont": "2",
                 "1": "backend",
@@ -246,7 +246,7 @@
             "id": "pr3",
             "title": "Juego 2D estilo retro",
             "date": "2025-01-21",
-            "image": "/images/projects/fastapi.png",
+            "image": "/retro_game.png",
             "tags": {
                 "cont": "2",
                 "1": "videojuegos",
@@ -270,28 +270,28 @@
         {
             "id": "h1",
             "title": "Juegos",
-            "image": "/images/juegos.jpg",
+            "image": "/games.png",
             "description": "Videojuegos como pasatiempo y forma de entretenimiento."
         },
         "2":
         {
             "id": "h2",
             "title": "Programación de juegos",
-            "image": "/images/programacion.jpg",
+            "image": "/pogra_games.png",
             "description": "Crear y experimentar con mecánicas y prototipos de videojuegos."
         },
         "3":
         {
             "id": "h3",
             "title": "Manga",
-            "image": "/images/manga.jpg",
+            "image": "/manga.png",
             "description": "Lectura y colección de mangas japoneses de distintos géneros."
         },
         "4":
         {
             "id": "h4",
             "title": "Política",
-            "image": "/images/politica.jpg",
+            "image": "/politics.png",
             "description": "Interés en la actualidad, debates y análisis político."
         }
     }

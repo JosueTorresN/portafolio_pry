@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { CourseProps } from "@/props/types";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const Card: React.FC<CourseProps> = (props) => {
   const t = useTranslations("Publics");
@@ -101,9 +102,11 @@ const Card: React.FC<CourseProps> = (props) => {
                       key={index}
                       className="border rounded-lg p-4 shadow-sm flex flex-col sm:flex-row gap-4 items-start"
                     >
-                      <img
+                      <Image
                         src={project.image}
                         alt={project.title}
+                        width={80}   // ✅ requerido
+                        height={80}  // ✅ requerido
                         className="w-full sm:w-20 sm:h-20 object-cover rounded-md"
                       />
                       <div>

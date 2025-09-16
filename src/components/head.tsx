@@ -16,7 +16,7 @@ export default function Home() {
       "@type": "CollegeOrUniversity",
       "name": "Instituto Tecnológico de Costa Rica (TEC)"
     },
-    "image": "https://tusitio.com/ruta-a-tu-foto.jpg",
+    "image": "/profile.jpg",
     "url": "https://tusitio.com",
     "sameAs": [
       "https://www.linkedin.com/in/josué-torres-a92a801a3"

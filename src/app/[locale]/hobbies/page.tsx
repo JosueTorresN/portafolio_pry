@@ -2,6 +2,7 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import {translationsHobbies} from "@/utils/traslationList";
+import Image from "next/image";
 
 export default function HobbiesPage() {
   const t = useTranslations("Hobbies");
@@ -25,7 +26,7 @@ export default function HobbiesPage() {
               key={hobby.id}
               className="bg-bg-offset p-6 rounded-lg shadow-sm border border-border"
             >
-              <img
+              <Image
                 src={hobby.image}
                 alt={hobby.title}
                 className="w-full h-48 object-cover rounded mb-4"

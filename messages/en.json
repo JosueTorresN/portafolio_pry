@@ -38,7 +38,7 @@
         "cont": "2",
         "1": {
             "code": "IC8057",
-            "name": "Introduction to Web Development 2",
+            "name": "Introduction to Programming",
             "semester": "Semester 2, 2025",
             "description": "This course covers the basics of programming using Python. Students will learn about variables, control structures, functions, and error handling.",
             "works": {
@@ -47,7 +47,7 @@
                     "title": "Personal Portfolio Website",
                     "tipe": "Lab",
                     "description": "A personal portfolio website to showcase my projects and skills, built using HTML, CSS, and JavaScript.",
-                    "image": "/images/portfolio.png",
+                    "image": "/web.png",
                     "date": "2024-10-15",
                     "tech": "HTML*CSS*JavaScript",
                     "repository": "www.github.com/username/portfolio",
@@ -57,7 +57,7 @@
                     "title": "Responsive Blog Template",
                     "tipe": "Project",
                     "description": "A responsive blog template designed for mobile and desktop, utilizing modern web design principles.",
-                    "image": "/images/blog_template.png",
+                    "image": "/web.png",
                     "date": "2024-11-20",
                     "tech": "HTML*CSS*JavaScript*Bootstrap",
                     "repository": "www.github.com/username/blog-template",
@@ -67,26 +67,26 @@
         },
         "2": {
             "code": "IC1234",
-            "name": "Introduction to Programming",
-            "semester": "Fall 2024",
+            "name": "Introduction to Web Development",
+            "semester": "Semestre 2, 2025",
             "description": "This course introduces students to web development using HTML, CSS, and JavaScript. It focuses on creating responsive and accessible websites.",
             "works": {
                 "cont": "2",
                 "1": {
-                    "title": "E-commerce Website",
+                    "title": "Characteristics of modern web development",
                     "tipe": "Lab",
-                    "description": "An e-commerce website with product listings, a shopping cart, and checkout functionality, built using HTML, CSS, JavaScript, and React.",
-                    "image": "/images/ecommerce.png",
+                    "description": "The student will research and document five key categories of current web development, based on reliable sources and real-life examples.",
+                    "image": "/web.png",
                     "date": "2024-10-15",
-                    "tech": "HTML*CSS*JavaScript*React",
-                    "repository": "www.github.com/username/ecommerce",
-                    "link": "www.username.com/shop"   
+                    "tech": "HTML*Markdown*JavaScript",
+                    "repository": "https://github.com/JosueTorresN/desarrollo-moderno-JosueTorres.git",
+                    "link": "https://mellow-dusk-c80b05.netlify.app"   
                 },
                 "2": {
                     "title": "Task Management App",
                     "tipe": "Project",
                     "description": "A task management application to help users organize their tasks and projects, featuring user authentication and data persistence.",
-                    "image": "/images/task_manager.png",
+                    "image": "/web.png",
                     "date": "2024-11-20",
                     "tech": "HTML*CSS*JavaScript*Node.js*MongoDB",
                     "repository": "www.github.com/username/task-manager",
@@ -206,7 +206,7 @@
             "id": "pr1",
             "title": "Task Manager with React and Firebase",
             "date": "2024-07-15",
-            "image": "/images/projects/todo-app.png",
+            "image": "/firebase.png",
             "tags": {
                 "cont": "2",
                 "1": "frontend",
@@ -226,7 +226,7 @@
             "id": "pr2",
             "title": "Library REST API",
             "date": "2024-10-02",
-            "image": "/images/projects/godot-game.png",
+            "image": "/api.png",
             "tags": {
                 "cont": "2",
                 "1": "backend",
@@ -246,7 +246,7 @@
             "id": "pr3",
             "title": "Retro-style 2D Game",
             "date": "2025-01-21",
-            "image": "/images/projects/fastapi.png",
+            "image": "/retro_game.png",
             "tags": {
                 "cont": "2",
                 "1": "videogames",
@@ -269,25 +269,25 @@
         "1": {
             "id": "h1",
             "title": "Games",
-            "image": "/images/juegos.jpg",
+            "image": "/games.png",
             "description": "Video games as a hobby and form of entertainment."
         },
         "2": {
             "id": "h2",
             "title": "Game Programming",
-            "image": "/images/programacion.jpg",
+            "image": "/pogra_game.png",
             "description": "Creating and experimenting with mechanics and video game prototypes."
         },
         "3": {
             "id": "h3",
             "title": "Manga",
-            "image": "/images/manga.jpg",
+            "image": "/manga.png",
             "description": "Reading and collecting Japanese manga of various genres."
         },
         "4": {
             "id": "h4",
             "title": "Politics",
-            "image": "/images/politica.jpg",
+            "image": "/politics.png",
             "description": "Interest in current events, debates, and political analysis."
         }
     }
