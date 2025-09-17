@@ -55,27 +55,25 @@ export default function ProjectsPage() {
   }, [query, selectedTag, selectedTech, sort]);
 
   return (
-    <main className="min-h-screen bg-bg text-text p-6 md:p-12">
-      <div className="max-w-6xl mx-auto">
+    <main className="min-h-screen bg-bg text-text p-4 md:p-8">
+      <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <div className="mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div className="mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
             <h2 className="text-2xl font-bold text-primary">{t("title")}</h2>
-            <p className="text-sm text-text-offset">
-              {t("description")}🚀
-            </p>
+            <p className="text-sm text-text-offset">{t("description")} 🚀</p>
           </div>
-          <div className="flex gap-3 items-center">
+          <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center w-full sm:w-auto">
             <input
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Buscar proyectos..."
-              className="px-3 py-2 rounded-md border border-border bg-bg-offset text-text shadow-sm w-64"
+              className="px-3 py-2 rounded-md border border-border bg-bg-offset text-text shadow-sm w-full sm:w-64"
             />
             <select
               value={sort}
               onChange={(e) => setSort(e.target.value)}
-              className="px-3 py-2 rounded-md border border-border surface-offset text-text"
+              className="px-3 py-2 rounded-md border border-border surface-offset text-text text-sm"
             >
               <option value="newest">{t("recent")}</option>
               <option value="oldest">{t("latest")}</option>
@@ -86,26 +84,30 @@ export default function ProjectsPage() {
         {/* Tags + Tech */}
         <section className="mb-6 flex flex-wrap gap-3 items-center">
           {/* Tags */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap">
             <span className="text-xs text-text-offset">Tags:</span>
             <div className="flex gap-2 flex-wrap">
               <button
                 onClick={() => setSelectedTag("")}
                 className={`px-2 py-1 rounded text-sm border border-border ${
-                  selectedTag === "" ? "primary text-text" : "primary-hover primary-offset text-text--offset"
+                  selectedTag === ""
+                    ? "primary text-text"
+                    : "primary-hover primary-offset text-text--offset"
                 }`}
               >
                 {t("all")}
               </button>
-              {allTags.map((t) => (
+              {allTags.map((tag) => (
                 <button
-                  key={t}
-                  onClick={() => setSelectedTag(t)}
+                  key={tag}
+                  onClick={() => setSelectedTag(tag)}
                   className={`px-2 py-1 rounded text-sm border border-border ${
-                    selectedTag === t ? "secondary text-white" : "secondary-hover text-text"
+                    selectedTag === tag
+                      ? "secondary text-white"
+                      : "secondary-hover text-text"
                   }`}
                 >
-                  {t}
+                  {tag}
                 </button>
               ))}
             </div>
@@ -120,9 +122,9 @@ export default function ProjectsPage() {
               className="px-2 py-1 rounded border border-border surface-offset text-sm text-text"
             >
               <option value="">{t("all")}</option>
-              {allTech.map((t) => (
-                <option key={t} value={t}>
-                  {t}
+              {allTech.map((tech) => (
+                <option key={tech} value={tech}>
+                  {tech}
                 </option>
               ))}
             </select>
@@ -142,11 +144,11 @@ export default function ProjectsPage() {
         </section>
 
         {/* Proyectos */}
-        <section className="grid gap-6 md:grid-cols-2">
+        <section className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((p) => (
             <article
               key={p.id}
-              className="bg-bg-offset p-6 rounded-lg shadow-sm border border-border"
+              className="bg-bg-offset p-4 rounded-lg shadow-sm border border-border"
             >
               <Image
                 src={p.image}
@@ -154,13 +156,12 @@ export default function ProjectsPage() {
                 width={0}
                 height={0}
                 sizes="100vw"
-                style={{ width: "100%", height: "160px" }} // equivale a h-40
-                className="object-cover rounded mb-4"
+                className="w-full aspect-[4/3] object-cover rounded mb-3"
               />
               <div className="flex items-start justify-between">
                 <div>
-                  <h2 className="text-xl font-semibold mb-1 text-text">{p.title}</h2>
-                  <p className="text-sm text-text-offset mb-2">
+                  <h2 className="text-lg font-semibold mb-1 text-text">{p.title}</h2>
+                  <p className="text-xs text-text-offset mb-2">
                     {format(new Date(p.date), "PPP")}
                   </p>
                 </div>
@@ -170,21 +171,21 @@ export default function ProjectsPage() {
                   </span>
                 )}
               </div>
-              <p className="text-text-offset mb-3">{p.excerpt}</p>
-              <div className="flex items-center gap-3 flex-wrap">
-                {p.tags.map((t) => (
+              <p className="text-sm text-text-offset mb-3">{p.excerpt}</p>
+              <div className="flex items-center gap-2 flex-wrap">
+                {p.tags.map((tag) => (
                   <button
-                    key={t}
-                    onClick={() => setSelectedTag(t)}
+                    key={tag}
+                    onClick={() => setSelectedTag(tag)}
                     className="text-xs px-2 py-1 border border-border rounded bg-bg-offset text-text"
                   >
-                    #{t}
+                    #{tag}
                   </button>
                 ))}
-                <div className="ml-auto flex gap-2">
+                <div className="ml-auto">
                   <button
                     onClick={() => setActiveProject(p)}
-                    className="px-3 py-1 rounded primary primary-hover text-white"
+                    className="px-3 py-1 rounded primary primary-hover text-white text-xs"
                   >
                     {t("read")}
                   </button>
@@ -196,23 +197,23 @@ export default function ProjectsPage() {
 
         {/* Empty state */}
         {filtered.length === 0 && (
-          <p className="mt-8 text-center text-text-offset">
-            {t("noFound")}
-          </p>
+          <p className="mt-8 text-center text-text-offset">{t("noFound")}</p>
         )}
 
         {/* Modal */}
         {activeProject && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-6">
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
             <div
               className="absolute inset-0 bg-black/40"
               onClick={() => setActiveProject(undefined)}
             />
-            <div className="relative max-w-3xl w-full surface-offset p-6 rounded-lg shadow-lg z-10 overflow-auto max-h-[90vh] border border-border">
+            <div className="relative max-w-2xl w-full surface-offset p-4 rounded-lg shadow-lg z-10 overflow-auto max-h-[90vh] border border-border">
               <header className="flex items-start justify-between gap-4">
                 <div>
-                  <h2 className="text-2xl font-bold text-text">{activeProject.title}</h2>
-                  <p className="text-sm text-text-offset">
+                  <h2 className="text-xl font-bold text-text">
+                    {activeProject.title}
+                  </h2>
+                  <p className="text-xs text-text-offset">
                     {format(new Date(activeProject.date), "PPP")}
                   </p>
                 </div>
@@ -226,18 +227,18 @@ export default function ProjectsPage() {
               <img
                 src={activeProject.image}
                 alt={activeProject.title}
-                className="w-full h-60 object-cover rounded my-4"
+                className="w-full aspect-[4/3] object-cover rounded my-3"
               />
-              <article className="mt-4 text-text">
+              <article className="mt-3 text-sm text-text">
                 <ReactMarkdown>{activeProject.content}</ReactMarkdown>
               </article>
-              <footer className="mt-6 flex gap-2 flex-wrap">
-                {activeProject.tags.map((t: string) => (
+              <footer className="mt-4 flex gap-2 flex-wrap">
+                {activeProject.tags.map((tag: string) => (
                   <span
-                    key={t}
+                    key={tag}
                     className="text-xs border border-border px-2 py-1 rounded text-text"
                   >
-                    #{t}
+                    #{tag}
                   </span>
                 ))}
               </footer>
