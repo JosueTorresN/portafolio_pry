@@ -71,7 +71,7 @@
                 "semester": "Semestre 2, 2025",
                 "description": "Este curso introduce a los estudiantes en el desarrollo de páginas web utilizando HTML, CSS y JavaScript. Se enfoca en la creación de sitios web responsivos y accesibles.",
                 "works": {
-                    "cont": "2",
+                    "cont": "5",
                     "1": {
                         "title": "Características del desarrollo web moderno",
                         "tipe": "Laboratorio",
@@ -83,14 +83,44 @@
                         "link": "https://mellow-dusk-c80b05.netlify.app"   
                     },
                     "2": {
-                        "title": "Plantilla de Blog Responsiva",
-                        "tipe": "Proyecto",
-                        "description": "Una plantilla de blog responsiva diseñada para dispositivos móviles y de escritorio, utilizando principios modernos de diseño web.",
+                        "title": "Estructuración semántica de un sitio web",
+                        "tipe": "Laboratorio",
+                        "description": "En el desarrollo web moderno, la correcta estructuración semántica de un sitio y la implementación de prácticas de accesibilidad son aspectos esenciales para garantizar la usabilidad, mantenibilidad e interoperabilidad de las aplicaciones.",
+                        "image": "/web.png",
+                        "date": "2025-08-16",
+                        "tech": "HTML*CSS*JavaScript*Bootstrap*Markdown",
+                        "repository": "https://github.com/JosueTorresN/Lab2.git",
+                        "link": "https://68a14c1a8a59470008eb48d9--lab2tec.netlify.app"   
+                    },
+                    "3": {
+                        "title": "Diseño y maquetación de páginas web modernas",
+                        "tipe": "Laboratorio",
+                        "description": "El diseño y maquetación de páginas web modernas requiere un dominio sólido de las hojas de estilo en cascada (CSS).",
+                        "image": "/web.png",
+                        "date": "2025-08-25",
+                        "tech": "HTML*CSS*JavaScript",
+                        "repository": "www.github.com/username/portfolio",
+                        "link": "www.username.com"   
+                    },
+                    "4": {
+                        "title": "PULIDO RESPONSIVE WEB",
+                        "tipe": "Laboratorio",
+                        "description": "Convertir el laboratorio 3 en un diseño responsive con TRES versiones: móvil, tablet y desktop.",
                         "image": "/web.png",
                         "date": "2024-11-20",
+                        "tech": "HTML*CSS*JavaScript*TailwindCSS",
+                        "repository": "https://github.com/JosueTorresN/Lab2.git",
+                        "link": "https://68bb47406f038a000867cfe9--lab5-responsive.netlify.app"   
+                    },
+                    "5": {
+                        "title": "Practica de actividades en clase",
+                        "tipe": "Laboratorio",
+                        "description": "Desarrollo de actividades en clase.",
+                        "image": "/web.png",
+                        "date": "2025-09-19",
                         "tech": "HTML*CSS*JavaScript*Bootstrap",
-                        "repository": "www.github.com/username/blog-template",
-                        "link": "www.username.com/blog"   
+                        "repository": "",
+                        "link": ""
                     }
                 }
         }

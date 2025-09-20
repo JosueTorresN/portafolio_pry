@@ -71,7 +71,7 @@
             "semester": "Semestre 2, 2025",
             "description": "This course introduces students to web development using HTML, CSS, and JavaScript. It focuses on creating responsive and accessible websites.",
             "works": {
-                "cont": "2",
+                "cont": "5",
                 "1": {
                     "title": "Characteristics of modern web development",
                     "tipe": "Lab",
@@ -83,14 +83,44 @@
                     "link": "https://mellow-dusk-c80b05.netlify.app"   
                 },
                 "2": {
-                    "title": "Task Management App",
-                    "tipe": "Project",
-                    "description": "A task management application to help users organize their tasks and projects, featuring user authentication and data persistence.",
+                    "title": "Semantic Structuring of a Website",
+                    "tipe": "Lab",
+                    "description": "In modern web development, the correct semantic structuring of a site and the implementation of accessibility practices are essential aspects to ensure usability, maintainability, and interoperability of applications.",
+                    "image": "/web.png",
+                    "date": "2025-08-16",
+                    "tech": "HTML*CSS*JavaScript*Bootstrap*Markdown",
+                    "repository": "https://github.com/JosueTorresN/Lab2.git",
+                    "link": "https://68a14c1a8a59470008eb48d9--lab2tec.netlify.app"   
+                },
+                "3": {
+                    "title": "Design and Layout of Modern Web Pages",
+                    "tipe": "Lab",
+                    "description": "The design and layout of modern web pages require a solid command of Cascading Style Sheets (CSS).",
+                    "image": "/web.png",
+                    "date": "2025-08-25",
+                    "tech": "HTML*CSS*JavaScript",
+                    "repository": "www.github.com/username/portfolio",
+                    "link": "www.username.com"   
+                },
+                "4": {
+                    "title": "RESPONSIVE WEB POLISHING",
+                    "tipe": "Lab",
+                    "description": "Transform Lab 3 into a responsive design with THREE versions: mobile, tablet, and desktop.",
                     "image": "/web.png",
                     "date": "2024-11-20",
-                    "tech": "HTML*CSS*JavaScript*Node.js*MongoDB",
-                    "repository": "www.github.com/username/task-manager",
-                    "link": "www.username.com/tasks"   
+                    "tech": "HTML*CSS*JavaScript*TailwindCSS",
+                    "repository": "https://github.com/JosueTorresN/Lab2.git",
+                    "link": "https://68bb47406f038a000867cfe9--lab5-responsive.netlify.app"   
+                },
+                "5": {
+                    "title": "Practice of In-Class Activities",
+                    "tipe": "Lab",
+                    "description": "Development of in-class activities.",
+                    "image": "/web.png",
+                    "date": "2025-09-19",
+                    "tech": "HTML*CSS*JavaScript*Bootstrap",
+                    "repository": "",
+                    "link": ""
                 }
             }
         }
