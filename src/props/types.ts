@@ -2,11 +2,11 @@ export interface ProjectProps {
   title: string;
   tipe: string;
   description: string;
-  image: string; // URL de la imagen
+  image: string;
   date: string;
   technologies: string[];
-  repositoryLink?: string; // Hacer que repositoryLink sea opcional
-  liveDemoLink?: string; // Hacer que liveDemoLink sea opcional
+  repositoryLink?: string;
+  liveDemoLink?: string;
 }
 
 interface CourseProps {
@@ -14,7 +14,7 @@ interface CourseProps {
     name: string;
     semster: string;
     description: string;
-    projects?: ProjectProps[] | []; // Hacer que projects sea opcional
+    projects?: ProjectProps[] | []; 
 }
 
 interface CoursesProps {

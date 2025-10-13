@@ -1,4 +1,3 @@
-// pages/cv.tsx (o donde lo tengas)
 "use client";
 
 import { useRef } from "react";

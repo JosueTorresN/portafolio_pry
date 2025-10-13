@@ -25,7 +25,6 @@ export default function RecommendationsSection() {
       body: JSON.stringify({ body: newComment }),
     });
     setNewComment("");
-    // recargar lista
     const res = await fetch("/api/comments");
     setComments(await res.json());
   };

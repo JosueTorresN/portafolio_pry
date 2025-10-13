@@ -6,12 +6,11 @@ import { Globe } from "lucide-react";
 export default function LanguageToggle() {
   const router = useRouter();
   const pathname = usePathname();
-  const locale = useLocale(); // idioma actual (ej: "es" o "en")
+  const locale = useLocale();
 
   const toggleLanguage = () => {
     const newLocale = locale === "es" ? "en" : "es";
 
-    // 👇 Redirige a la misma ruta pero en el nuevo idioma
     const newPath = `/${newLocale}${pathname.startsWith('/') ? '' : '/'}${pathname.replace(/^\/(es|en)/, '')}`;
     router.push(newPath);
   };
