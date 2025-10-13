@@ -50,7 +50,7 @@ const ProyectCard: React.FC<CourseProps> = (props) => {
       <h2 className="text-lg sm:text-xl font-bold mb-1">
         {props.code} - {props.name}
       </h2>
-      <span className="text-xs sm:text-sm text-gray-400 mb-4 block">{props.semster}</span>
+      <span className="text-xs sm:text-sm mb-4 block">{props.semster}</span>
       <p className="mb-4 text-sm sm:text-base">{props.description}</p>
 
       {/* --- Sección de proyectos colapsable --- */}
