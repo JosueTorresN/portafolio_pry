@@ -5,7 +5,6 @@ import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { getMessages } from "next-intl/server";
-import Head from "@/components/head";
 import Header from "@/components/header";
 
 const geistSans = Geist({
@@ -18,12 +17,51 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "This is my personal portfolio where I share my projects and experiences.",
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://porfoliotec.netlify.app/es";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Josué Torres Narvaez",
+  "givenName": "Josué",
+  "familyName": "Torres Narvaez",
+  "jobTitle": "Ingeniero en Computación",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Instituto Tecnológico de Costa Rica (TEC)"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Instituto Tecnológico de Costa Rica (TEC)"
+  },
+
+  "image": `${siteUrl}/body_profile.png`,
+  "url": siteUrl,
+  "sameAs": [
+    "https://www.linkedin.com/in/josué-torres-a92a801a3"
+  ],
+  "nationality": {
+    "@type": "Country",
+    "name": "Costa Rica"
+  },
+  "knowsAbout": [
+    "Ciberseguridad",
+    "Inteligencia Artificial",
+    "Desarrollo Web",
+    "Videojuegos"
+  ],
+  "email": "mailto:jtn1999@outlook.com"
 };
 
-// type params = Promise<{ locale: "en" | "es"; }>;
+export const metadata: Metadata = {
+  title: "Perfil de Josué Torres Narvaez",
+  description: "Ingeniero en Computación, especializado en Ciberseguridad e Inteligencia Artificial.",
+
+  other: {
+
+    "application/ld+json": JSON.stringify(jsonLd),
+  },
+};
 
 // Define una interfaz para las props del Layout
 interface RootLayoutProps {
@@ -34,15 +72,12 @@ interface RootLayoutProps {
 export default async function RootLayout({
   children,
   params
-}: RootLayoutProps) { // Usa la nueva interfaz aquí
+}: RootLayoutProps) {
 
-  // Ahora puedes acceder a 'locale' de forma segura
   const { locale } = await params;
 
   const allowedLocales = ["en", "es"];
 
-  // Ya no necesitas 'as any' porque TypeScript sabe que 'locale' es un string
-  // if (!routing.locales.includes(locale)) {
   if (!allowedLocales.includes(locale)) {
     notFound();
   }
@@ -50,7 +85,7 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang={locale}>
-      <Head />
+
       <NextIntlClientProvider locale={locale} messages={messages}>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}

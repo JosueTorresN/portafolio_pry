@@ -50,7 +50,7 @@ const CVContent = forwardRef<HTMLDivElement>((props, ref) => {
     <div
       ref={ref}
       className="
-        bg-background text-foreground rounded-lg shadow-2xl overflow-hidden
+        surface-offset text-foreground rounded-lg shadow-2xl overflow-hidden
         print:shadow-none print:rounded-none
       "
     >
