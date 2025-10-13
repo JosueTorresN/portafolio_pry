@@ -18,7 +18,15 @@
         "repository": "Repository",
         "technologies": "Technologies",
         "type": "Type",
-        "projects": "Projects"
+        "projects": "Projects",
+
+        "filterProjects": "Filter Projects",
+        "clearFilters": "Clear Filters",
+        "all": "All",
+        "filterByYear": "Filter by Year",
+        "filterByTech": "Filter by Technology",
+        "liveDemo": "Live Demo",
+        "noProjectsMatch": "No projects match the filters."
     },
     "Header": {
         "home": "Home",

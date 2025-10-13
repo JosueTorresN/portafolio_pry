@@ -18,7 +18,16 @@
         "repository": "Repositorio",
         "technologies": "Tecnologías",
         "type": "Tipo",
-        "projects": "Proyectos"
+        "projects": "Proyectos",
+
+        "filterProjects": "Filtrar Proyectos",
+        "clearFilters": "Limpiar filtros",
+        "all": "Todos",
+        "filterByYear": "Filtrar por año",
+        "filterByTech": "Filtrar por tecnología",
+        "liveDemo": "Demo en vivo",
+        "noProjectsMatch": "No hay proyectos que coincidan con los filtros."
+
     },
     "Header": {
         "home": "Inicio",
