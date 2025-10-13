@@ -41,10 +41,7 @@ const CVContent = forwardRef<HTMLDivElement>((props, ref) => {
     tools: ["Git / GitHub", "Docker", "SQL / NoSQL", "Figma", "Firebase"],
   };
 
-  // --- SOLUCIÓN AQUÍ ---
-  // Construimos la URL completa de la imagen.
   const profileImageUrl = `${process.env.NEXT_PUBLIC_SITE_URL || ''}/body_profile.png`;
-  // --------------------
 
   return (
     <div

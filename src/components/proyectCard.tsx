@@ -1,9 +1,9 @@
-// components/ProyectCard.tsx
+'use client';
 import React, { useState, useMemo } from "react";
 import { CourseProps, ProjectProps } from "@/props/types";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Filter, XCircle } from "lucide-react"; // Iconos para mejor UX
+import { Filter, XCircle } from "lucide-react";
 
 const ProyectCard: React.FC<CourseProps> = (props) => {
   const t = useTranslations("Publics");
@@ -15,15 +15,14 @@ const ProyectCard: React.FC<CourseProps> = (props) => {
   const [filterYear, setFilterYear] = useState("");
 
   // --- Opciones de filtros generadas dinámicamente ---
-  // Usamos useMemo para evitar recalcular esto en cada renderizado
   const uniqueTechnologies = useMemo(() => {
     const allTechs = props.projects?.flatMap((p) => p.technologies) || [];
-    return [...new Set(allTechs)].filter(Boolean); // Elimina duplicados y valores vacíos
+    return [...new Set(allTechs)].filter(Boolean);
   }, [props.projects]);
 
   const uniqueYears = useMemo(() => {
     const allYears = props.projects?.map((p) => new Date(p.date).getFullYear().toString()) || [];
-    return [...new Set(allYears)].sort((a, b) => parseInt(b) - parseInt(a)); // Ordena de más reciente a más antiguo
+    return [...new Set(allYears)].sort((a, b) => parseInt(b) - parseInt(a));
   }, [props.projects]);
 
   const evaluationTypes = t("evaluationType").split(",");
