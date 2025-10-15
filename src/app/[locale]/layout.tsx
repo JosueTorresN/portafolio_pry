@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { getMessages } from "next-intl/server";
 import Header from "@/components/header";
+import ProfileSchema from "@/components/profileSchema";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -48,7 +49,7 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang={locale}>
-
+      <ProfileSchema />
       <NextIntlClientProvider locale={locale} messages={messages}>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
