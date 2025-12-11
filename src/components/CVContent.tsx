@@ -74,21 +74,21 @@ const CVContent = forwardRef<HTMLDivElement>((props, ref) => {
           </div>
 
           <div className="mt-8 space-y-4 text-sm">
-            <a href="mailto:josuetorres@gmail.com" className="flex items-center gap-3 hover:secondary-text transition-colors">
+            <a href="mailto:jtn1999@outlook.com" className="flex items-center gap-3 hover:secondary-text transition-colors">
               <Mail className="w-4 h-4" />
-              <span>josuetorres@gmail.com</span>
+              <span>jtn1999@outlook.com</span>
             </a>
-            <a href="tel:+50688888888" className="flex items-center gap-3 hover:secondary-text transition-colors">
+            <a href="tel:+50661620984" className="flex items-center gap-3 hover:secondary-text transition-colors">
               <Phone className="w-4 h-4" />
-              <span>(+506) 8888-8888</span>
+              <span>(+506) 6162-0984</span>
             </a>
-            <a href="https://www.linkedin.com/in/josué-torres-a92a801a3" target="_blank" className="flex items-center gap-3 hover:secondary-text transition-colors">
+            <a href="www.linkedin.com/in/josué-torres-a92a801a3" target="_blank" className="flex items-center gap-3 hover:secondary-text transition-colors">
               <Linkedin className="w-4 h-4" />
               <span>linkedin.com/in/josué-torres</span>
             </a>
-            <a href="https://github.com/tuusuario" target="_blank" className="flex items-center gap-3 hover:secondary-text transition-colors">
+            <a href="https://github.com/JosueTorresN" target="_blank" className="flex items-center gap-3 hover:secondary-text transition-colors">
               <Github className="w-4 h-4" />
-              <span>github.com/tuusuario</span>
+              <span>github.com/JosueTorresN</span>
             </a>
           </div>
         </aside>
@@ -127,7 +127,7 @@ const CVContent = forwardRef<HTMLDivElement>((props, ref) => {
              </div>
           </section>
 
-          <section className="mt-8">
+          {/* <section className="mt-8">
             <SectionTitle icon={Award} title={t("certyfications")} />
             <ul className="list-disc list-inside space-y-2 text-sm">
               <li>
@@ -143,7 +143,7 @@ const CVContent = forwardRef<HTMLDivElement>((props, ref) => {
                 </a>
               </li>
             </ul>
-          </section>
+          </section> */}
         </main>
       </div>
     </div>
