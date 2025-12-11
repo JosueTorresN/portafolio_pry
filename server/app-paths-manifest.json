@@ -3,7 +3,7 @@
   "/api/comments/route": "app/api/comments/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/[locale]/block/page": "app/[locale]/block/page.js",
-  "/[locale]/hobbies/page": "app/[locale]/hobbies/page.js",
   "/[locale]/page": "app/[locale]/page.js",
-  "/[locale]/proyects/page": "app/[locale]/proyects/page.js"
+  "/[locale]/proyects/page": "app/[locale]/proyects/page.js",
+  "/[locale]/hobbies/page": "app/[locale]/hobbies/page.js"
 }

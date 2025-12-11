@@ -3,7 +3,7 @@
   "/api/comments/route": "/api/comments",
   "/favicon.ico/route": "/favicon.ico",
   "/[locale]/block/page": "/[locale]/block",
-  "/[locale]/hobbies/page": "/[locale]/hobbies",
   "/[locale]/page": "/[locale]",
-  "/[locale]/proyects/page": "/[locale]/proyects"
+  "/[locale]/proyects/page": "/[locale]/proyects",
+  "/[locale]/hobbies/page": "/[locale]/hobbies"
 }
