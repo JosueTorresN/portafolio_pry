@@ -43,24 +43,24 @@
     },
     "Courses": {
         "title": "Cursos Relevantes",
-        "description": "Una selección de cursos universitarios que han contribuido significativamente a mi formación académica y profesional.",
+        "description": "Una selección de cursos universitarios y proyectos personales que han contribuido significativamente a mi formación académica y profesional.",
         "cont": "2",
         "1": {
-                "code": "IC1234",
-                "name": "Introducción a la Programación",
-                "semester": "Otoño 2024",
-                "description": "Este curso cubre los conceptos básicos de la programación utilizando Python. Los estudiantes aprenderán sobre variables, estructuras de control, funciones y manejo de errores.",
+                "code": "",
+                "name": "Proyectos Personales",
+                "semester": "Semester 2, 2025",
+                "description": "Esta es una colección de mis proyectos personales que he creado para practicar mis habilidades en diferentes tecnologías.",
                 "works": {
                     "cont": "2",
                     "1": {
-                        "title": "Sitio Web de Portafolio Personal",
-                        "tipe": "Laboratorio",
+                        "title": "Secure Banking REST AP",
+                        "tipe": "Proyecto",
                         "description": "Un sitio web de portafolio personal para mostrar mis proyectos y habilidades, construido con HTML, CSS y JavaScript.",
-                        "image": "/web.png",
-                        "date": "2024-10-15",
-                        "tech": "HTML*CSS*JavaScript",
-                        "repository": "www.github.com/username/portfolio",
-                        "link": "www.username.com"   
+                        "image": "/bancrap_postman_com.png",
+                        "date": "2025-10-15",
+                        "tech": "Node*npm*JavaScript*Express*SQL Server*Postman",
+                        "repository": "https://github.com/JosueTorresN/bank_backend_pry.git",
+                        "link": "https://documenter.getpostman.com/view/20953084/2sB3WpRMEa"   
                     },
                     "2": {
                         "title": "Plantilla de Blog Responsiva",

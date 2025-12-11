@@ -42,24 +42,24 @@
     },
     "Courses": {
         "title": "Relevant Courses",
-        "description": "A selection of university courses that have significantly contributed to my academic and professional development.",
+        "description": "A selection of university courses and personal projects that have significantly contributed to my academic and professional development.",
         "cont": "2",
         "1": {
-            "code": "IC8057",
-            "name": "Introduction to Programming",
+            "code": "",
+            "name": "Personal proyects",
             "semester": "Semester 2, 2025",
-            "description": "This course covers the basics of programming using Python. Students will learn about variables, control structures, functions, and error handling.",
+            "description": "This is a collection of my personal projects that I created to practice my skills in different technologies.",
             "works": {
                 "cont": "2",
                 "1": {
-                    "title": "Personal Portfolio Website",
-                    "tipe": "Lab",
-                    "description": "A personal portfolio website to showcase my projects and skills, built using HTML, CSS, and JavaScript.",
-                    "image": "/web.png",
-                    "date": "2024-10-15",
-                    "tech": "HTML*CSS*JavaScript",
-                    "repository": "www.github.com/username/portfolio",
-                    "link": "www.username.com"   
+                    "title": "Secure Banking REST API",
+                    "tipe": "Project",
+                    "description": "Architected a RESTful API for managing user accounts and interbank transfers using SQL Server transactions to ensure data integrity..",
+                    "image": "/bancrap_postman_com.png",
+                    "date": "2025-10-15",
+                    "tech": "Node*npm*JavaScript*Express*SQL Server*Postman",
+                    "repository": "https://github.com/JosueTorresN/bank_backend_pry.git",
+                    "link": "https://documenter.getpostman.com/view/20953084/2sB3WpRMEa"   
                 },
                 "2": {
                     "title": "Responsive Blog Template",

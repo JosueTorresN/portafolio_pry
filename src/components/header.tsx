@@ -53,9 +53,9 @@ export default function Header() {
           <Link href="/hobbies" className="underline-color decoration-4 hover:underline">
             {t("hobbies")}
           </Link>
-          <Link href="/block" className="underline-color decoration-4 hover:underline">
+          {/* <Link href="/block" className="underline-color decoration-4 hover:underline">
             {t("blog")}
-          </Link>
+          </Link> */}
         </nav>
 
         <div className="hidden sm:flex items-center space-x-4">
