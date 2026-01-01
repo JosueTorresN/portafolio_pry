@@ -53,9 +53,9 @@
                 "works": {
                     "cont": "3",
                     "1": {
-                        "title": "Secure Banking REST AP",
+                        "title": "Secure Banking REST API",
                         "tipe": "Proyecto",
-                        "description": "Un sitio web de portafolio personal para mostrar mis proyectos y habilidades, construido con HTML, CSS y JavaScript.",
+                        "description": "Diseñé una API RESTful para administrar cuentas de usuario y transferencias interbancarias utilizando transacciones de SQL Server para garantizar la integridad de los datos.",
                         "image": "/bancrap_postman_com.png",
                         "date": "2025-10-15",
                         "tech": "Node*npm*JavaScript*Express*SQL Server*Postman",
