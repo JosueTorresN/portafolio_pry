@@ -75,7 +75,7 @@
                     "title": "Linux System Resource Monitor",
                     "tipe": "Project",
                     "description": "Developed a real-time system performance monitor interacting directly with the Linux kernel via the /proc filesystem.",
-                    "image": "/portfolio.png",
+                    "image": "/tm.png",
                     "date": "2025-09-10",
                     "tech": "C*Linux API*Ncurses",
                     "repository": "https://github.com/JosueTorresN/JTN_thop.git",

@@ -63,20 +63,20 @@
                         "link": "https://documenter.getpostman.com/view/20953084/2sB3WpRMEa"   
                     },
                     "2": {
-                        "title": "Plantilla de Blog Responsiva",
+                        "title": "VPN",
                         "tipe": "Proyecto",
                         "description": "Este proyecto consiste en el despliegue y configuración de una infraestructura de Red Privada Virtual (VPN) segura, alojada en una instancia EC2 de Amazon Web Services (AWS) con sistema operativo Ubuntu.",
                         "image": "/vpn.png",
                         "date": "2025-11-20",
                         "tech": "Chef*AWS EC2*Ubuntu*Bootstrap",
                         "repository": "https://github.com/JosueTorresN/chef-repo.git",
-                        "link": ""   
+                        "link": ""
                     },
                     "3": {
                         "title": "Monitor de Recursos del Sistema Linux",
                         "tipe": "Proyecto",
                         "description": "Desarrollé un monitor de rendimiento del sistema en tiempo real que interactúa directamente con el kernel de Linux a través del sistema de archivos /proc.",
-                        "image": "/portfolio.png",
+                        "image": "/tm.png",
                         "date": "2025-09-10",
                         "tech": "C*Linux API*Ncurses",
                         "repository": "https://github.com/JosueTorresN/JTN_thop.git",
