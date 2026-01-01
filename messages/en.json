@@ -50,7 +50,7 @@
             "semester": "Semester 2, 2025",
             "description": "This is a collection of my personal projects that I created to practice my skills in different technologies.",
             "works": {
-                "cont": "3",
+                "cont": "4",
                 "1": {
                     "title": "Secure Banking REST API",
                     "tipe": "Project",
