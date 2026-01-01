@@ -50,26 +50,36 @@
             "semester": "Semester 2, 2025",
             "description": "This is a collection of my personal projects that I created to practice my skills in different technologies.",
             "works": {
-                "cont": "2",
+                "cont": "3",
                 "1": {
                     "title": "Secure Banking REST API",
                     "tipe": "Project",
-                    "description": "Architected a RESTful API for managing user accounts and interbank transfers using SQL Server transactions to ensure data integrity..",
+                    "description": "Architected a RESTful API for managing user accounts and interbank transfers using SQL Server transactions to ensure data integrity.",
                     "image": "/bancrap_postman_com.png",
                     "date": "2025-10-15",
                     "tech": "Node*npm*JavaScript*Express*SQL Server*Postman",
-                    "repository": "https://github.com/JosueTorresN/bank_backend_pry.git",
+                    "repository": "https://github.com/JosueTorresN/chef-repo.git",
                     "link": "https://documenter.getpostman.com/view/20953084/2sB3WpRMEa"   
                 },
                 "2": {
-                    "title": "Responsive Blog Template",
+                    "title": "VPN",
                     "tipe": "Project",
-                    "description": "A responsive blog template designed for mobile and desktop, utilizing modern web design principles.",
-                    "image": "/web.png",
-                    "date": "2024-11-20",
-                    "tech": "HTML*CSS*JavaScript*Bootstrap",
+                    "description": "This project consists of the deployment and configuration of a secure Virtual Private Network (VPN) infrastructure, hosted on an Amazon Web Services (AWS) EC2 instance running Ubuntu.",
+                    "image": "/vpn.png",
+                    "date": "2025-11-20",
+                    "tech": "Chef*AWS EC2*Ubuntu*Bootstrap",
                     "repository": "www.github.com/username/blog-template",
-                    "link": "www.username.com/blog"   
+                    "link": ""   
+                },
+                "3": {
+                    "title": "Linux System Resource Monitor",
+                    "tipe": "Project",
+                    "description": "Developed a real-time system performance monitor interacting directly with the Linux kernel via the /proc filesystem.",
+                    "image": "/portfolio.png",
+                    "date": "2025-09-10",
+                    "tech": "C*Linux API*Ncurses",
+                    "repository": "www.github.com/username/portfolio",
+                    "link": ""   
                 }
             }
         },

@@ -51,7 +51,7 @@
                 "semester": "Semester 2, 2025",
                 "description": "Esta es una colección de mis proyectos personales que he creado para practicar mis habilidades en diferentes tecnologías.",
                 "works": {
-                    "cont": "2",
+                    "cont": "3",
                     "1": {
                         "title": "Secure Banking REST AP",
                         "tipe": "Proyecto",
@@ -65,12 +65,22 @@
                     "2": {
                         "title": "Plantilla de Blog Responsiva",
                         "tipe": "Proyecto",
-                        "description": "Una plantilla de blog responsiva diseñada para dispositivos móviles y de escritorio, utilizando principios modernos de diseño web.",
-                        "image": "/web.png",
-                        "date": "2024-11-20",
-                        "tech": "HTML*CSS*JavaScript",
-                        "repository": "www.github.com/username/blog-template",
-                        "link": "www.username.com/blog"   
+                        "description": "Este proyecto consiste en el despliegue y configuración de una infraestructura de Red Privada Virtual (VPN) segura, alojada en una instancia EC2 de Amazon Web Services (AWS) con sistema operativo Ubuntu.",
+                        "image": "/vpn.png",
+                        "date": "2025-11-20",
+                        "tech": "Chef*AWS EC2*Ubuntu*Bootstrap",
+                        "repository": "https://github.com/JosueTorresN/chef-repo.git",
+                        "link": ""   
+                    },
+                    "3": {
+                        "title": "Monitor de Recursos del Sistema Linux",
+                        "tipe": "Proyecto",
+                        "description": "Desarrollé un monitor de rendimiento del sistema en tiempo real que interactúa directamente con el kernel de Linux a través del sistema de archivos /proc.",
+                        "image": "/portfolio.png",
+                        "date": "2025-09-10",
+                        "tech": "C*Linux API*Ncurses",
+                        "repository": "www.github.com/username/portfolio",
+                        "link": ""   
                     }
                 }
             },
