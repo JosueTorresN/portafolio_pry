@@ -51,7 +51,7 @@
                 "semester": "Semester 2, 2025",
                 "description": "Esta es una colección de mis proyectos personales que he creado para practicar mis habilidades en diferentes tecnologías.",
                 "works": {
-                    "cont": "3",
+                    "cont": "4",
                     "1": {
                         "title": "Secure Banking REST API",
                         "tipe": "Proyecto",
@@ -81,7 +81,16 @@
                         "tech": "C*Linux API*Ncurses",
                         "repository": "https://github.com/JosueTorresN/JTN_thop.git",
                         "link": ""   
-                    }
+                    },
+                    "4": {
+                        "title": "Sitio web de banca segura",
+                        "tipe": "Proyecto",
+                        "description": "Desarrollé un sitio web de banca segura utilizando NextJS y TailwindCSS.",
+                        "image": "/BanCrap.png",
+                        "date": "2025-10-15",
+                        "tech": "NextJS*TailwindCSS*TypeScript*React",
+                        "repository": "https://github.com/JosueTorresN/bankpry.git",
+                        "link": "https://bancrap.netlify.app/es/login"
                 }
             },
          "2": {

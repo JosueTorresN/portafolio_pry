@@ -80,6 +80,16 @@
                     "tech": "C*Linux API*Ncurses",
                     "repository": "https://github.com/JosueTorresN/JTN_thop.git",
                     "link": ""   
+                },
+                "4": {
+                    "title": "Secure Banking Website",
+                    "tipe": "Project",
+                    "description": "Developed a secure banking website using NextJS and TailwindCSS.",
+                    "image": "/BanCrap.png",
+                    "date": "2025-10-15",
+                    "tech": "NextJS*TailwindCSS*TypeScript*React",
+                    "repository": "https://github.com/JosueTorresN/bankpry.git",
+                    "link": ""
                 }
             }
         },
